@@ -73,8 +73,8 @@ As an example, let's pick the latest thread from a forum and check out which com
     if err != nil {
         ...
     }    
-	postsByParent := make(map[string]*gisqus.Post)
-  
+    
+    postsByParent := make(map[string]*gisqus.Post)
     for _, post := range posts {
         postsByParent[post.parent] = post    
     }
