@@ -27,6 +27,7 @@ func (d *Drisqus) ThreadTrending(ctx context.Context) ([]*gisqus.Trend, error) {
 
 /*
 ThreadPostsQuick wraps ThreadPosts. It includes frequently used parameters, and sets the rest to their zero values
+When pages is -1, all pages are retrieved.
 */
 func (d *Drisqus) ThreadPostsQuick(ctx context.Context, threadID string, pages int) ([]*gisqus.Post, error) {
 	return d.ThreadPosts(ctx, threadID, pages, []string{}, []string{}, "", time.Time{}, "")
@@ -35,6 +36,7 @@ func (d *Drisqus) ThreadPostsQuick(ctx context.Context, threadID string, pages i
 /*
 ThreadPosts wraps https://disqus.com/api/docs/threads/listPosts/ (https://disqus.com/api/3.0/threads/listPosts.json)
 It does not support the "related" argument (related fields can be gotten with calls to their respective APIS)
+When pages is -1, all pages are retrieved.
 */
 func (d *Drisqus) ThreadPosts(ctx context.Context, threadID string, pages int, filters, includes []string, forumID string, since time.Time, order string) ([]*gisqus.Post, error) {
 
@@ -79,6 +81,7 @@ func (d *Drisqus) ThreadPosts(ctx context.Context, threadID string, pages int, f
 
 /*
 ThreadListQuick wraps ThreadList. It includes frequently used parameters, and sets the rest to their zero values
+When pages is -1, all pages are retrieved.
 */
 func (d *Drisqus) ThreadListQuick(ctx context.Context, forumID string, pages int) ([]*gisqus.Thread, error) {
 	return d.ThreadList(ctx, []string{}, []string{forumID}, []string{}, []string{}, []string{}, pages, time.Time{}, "")
@@ -87,6 +90,7 @@ func (d *Drisqus) ThreadListQuick(ctx context.Context, forumID string, pages int
 /*
 ThreadList wraps https://disqus.com/api/docs/threads/list/ (https://disqus.com/api/3.0/threads/list.json)
 It does not support the "related" argument (related fields can be gotten with calls to their respective APIS)
+When pages is -1, all pages are retrieved.
 */
 func (d *Drisqus) ThreadList(ctx context.Context, categoryIDs, forumIDs, threadIDs, authorIDs, includes []string, pages int, since time.Time, order string) ([]*gisqus.Thread, error) {
 

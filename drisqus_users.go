@@ -15,6 +15,7 @@ type UserActivities struct {
 
 /*
 UserActivitiesQuick wraps UserActivities. It includes frequently used parameters, and sets the rest to their zero values
+When pages is -1, all pages are retrieved.
 */
 func (d *Drisqus) UserActivitiesQuick(ctx context.Context, userID string, pages int) (*UserActivities, error) {
 	return d.UserActivities(ctx, userID, pages, time.Time{}, []string{})
@@ -22,6 +23,7 @@ func (d *Drisqus) UserActivitiesQuick(ctx context.Context, userID string, pages 
 
 /*
 UserActivities wraps https://disqus.com/api/docs/users/listActivity/ (https://disqus.com/api/3.0/users/listActivity.json)
+When pages is -1, all pages are retrieved.
 */
 func (d *Drisqus) UserActivities(ctx context.Context, userID string, pages int, since time.Time, includes []string) (*UserActivities, error) {
 
@@ -71,6 +73,7 @@ func (d *Drisqus) UserMostActiveForums(ctx context.Context, userID string) ([]*g
 
 /*
 UserPostsQuick wraps UserPosts. It includes frequently used parameters, and sets the rest to their zero values
+When pages is -1, all pages are retrieved.
 */
 func (d *Drisqus) UserPostsQuick(ctx context.Context, userID string, pages int) ([]*gisqus.Post, error) {
 	return d.UserPosts(ctx, userID, []string{}, pages, time.Time{}, "")
@@ -79,6 +82,7 @@ func (d *Drisqus) UserPostsQuick(ctx context.Context, userID string, pages int) 
 /*
 UserPosts wraps https://disqus.com/api/docs/users/listPosts/ (https://disqus.com/api/3.0/users/listPosts.json)
 It does not support the "related" argument (related fields can be gotten with calls to their respective APIS)
+When pages is -1, all pages are retrieved.
 */
 func (d *Drisqus) UserPosts(ctx context.Context, userID string, includes []string, pages int, since time.Time, order string) ([]*gisqus.Post, error) {
 
@@ -135,6 +139,7 @@ type InterestingUser struct {
 
 /*
 UserInteresting wraps https://disqus.com/api/docs/users/interestingUsers/ (https://disqus.com/api/3.0/users/interestingUsers.json)
+When pages is -1, all pages are retrieved.
 */
 func (d *Drisqus) UserInteresting(ctx context.Context, pages int) ([]*InterestingUser, error) {
 
@@ -171,6 +176,7 @@ func (d *Drisqus) UserInteresting(ctx context.Context, pages int) ([]*Interestin
 
 /*
 UserActiveForums wraps https://disqus.com/api/docs/users/listActiveForums/ (https://disqus.com/api/3.0/users/listActiveForums.json)
+When pages is -1, all pages are retrieved.
 */
 func (d *Drisqus) UserActiveForums(ctx context.Context, userID string, pages int, order string) ([]*gisqus.Forum, error) {
 
@@ -204,6 +210,7 @@ func (d *Drisqus) UserActiveForums(ctx context.Context, userID string, pages int
 /*
 UserFollowers wraps https://disqus.com/api/docs/users/listFollowers/ (https://disqus.com/api/3.0/users/listFollowers.json)
 Numlikes, NumPosts, NumFollowers are not returned by Disqus' API
+When pages is -1, all pages are retrieved.
 */
 func (d *Drisqus) UserFollowers(ctx context.Context, userID string, pages int, order string) ([]*gisqus.User, error) {
 	values := url.Values{}
@@ -236,6 +243,7 @@ func (d *Drisqus) UserFollowers(ctx context.Context, userID string, pages int, o
 /*
 UserFollowing wraps https://disqus.com/api/docs/users/listFollowing/ (https://disqus.com/api/3.0/users/listFollowing.json)
 Numlikes, NumPosts, NumFollowers are not returned by Disqus' API
+When pages is -1, all pages are retrieved.
 */
 func (d *Drisqus) UserFollowing(ctx context.Context, userID string, pages int, order string) ([]*gisqus.User, error) {
 	values := url.Values{}
@@ -267,6 +275,7 @@ func (d *Drisqus) UserFollowing(ctx context.Context, userID string, pages int, o
 
 /*
 UserForumFollowing wraps https://disqus.com/api/docs/users/listFollowingForums/ (https://disqus.com/api/3.0/users/listFollowingForums.json)
+When pages is -1, all pages are retrieved.
 */
 func (d *Drisqus) UserForumFollowing(ctx context.Context, userID string, pages int, order string) ([]*gisqus.Forum, error) {
 	values := url.Values{}

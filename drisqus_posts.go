@@ -64,6 +64,7 @@ func (d *Drisqus) PostDetails(ctx context.Context, postID string) (*gisqus.Post,
 
 /*
 PostListQuick wraps PostList. It includes frequently used parameters, and sets the rest to their zero values
+When pages is -1, all pages are retrieved.
 */
 func (d *Drisqus) PostListQuick(ctx context.Context, threadID string, pages int) ([]*gisqus.Post, error) {
 	return d.PostList(ctx, pages, []string{}, []string{threadID}, []string{}, time.Time{}, time.Time{}, "", "")
@@ -71,6 +72,7 @@ func (d *Drisqus) PostListQuick(ctx context.Context, threadID string, pages int)
 
 /*
 PostList wraps https://disqus.com/api/docs/posts/list/ (https://disqus.com/api/3.0/posts/list.json)
+When pages is -1, all pages are retrieved.
 */
 func (d *Drisqus) PostList(ctx context.Context, pages int, categoryIDs, threadIDs, forumIDs []string, start, end time.Time, sortType, order string) ([]*gisqus.Post, error) {
 
@@ -119,6 +121,7 @@ func (d *Drisqus) PostList(ctx context.Context, pages int, categoryIDs, threadID
 
 /*
 PostPopularQuick wraps PostPopular. It includes frequently used parameters, and sets the rest to their zero values
+When pages is -1, all pages are retrieved.
 */
 func (d *Drisqus) PostPopularQuick(ctx context.Context, threadID string, pages int) ([]*gisqus.Post, error) {
 	return d.PostPopular(ctx, pages, []string{}, []string{threadID}, []string{}, "", "", "", "")
@@ -126,6 +129,7 @@ func (d *Drisqus) PostPopularQuick(ctx context.Context, threadID string, pages i
 
 /*
 PostPopular wraps https://disqus.com/api/docs/posts/listPopular/ (https://disqus.com/api/3.0/posts/listPopular.json)
+When pages is -1, all pages are retrieved.
 */
 func (d *Drisqus) PostPopular(ctx context.Context, pages int, forumIDs, threadIDs, includes []string, categoryID, interval, organizationID, order string) ([]*gisqus.Post, error) {
 
