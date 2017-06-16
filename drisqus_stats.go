@@ -6,14 +6,28 @@ import (
 	"github.com/pierods/gisqus"
 )
 
+// AuthorID aliases string to signal intent of type
 type AuthorID string
+
+// ReplyCount aliases int to signal intent of type
 type ReplyCount int
+
+// PostCount aliases int to signal intent of type
 type PostCount int
+
+// LikeCount aliases int to signal intent of type
 type LikeCount int
+
+//DislikeCount aliases int to signal intent of type
 type DislikeCount int
+
+// PostID aliases string to signal intent of type
 type PostID string
+
+// AuthorUsername aliases string to signal intent of type
 type AuthorUsername string
 
+// AuthorStats contains statistics for a user as far as posting to a single thread goes
 type AuthorStats struct {
 	ID             AuthorID       `json:"id"`
 	Username       AuthorUsername `json:"username"`
@@ -24,6 +38,7 @@ type AuthorStats struct {
 	Dislikes       DislikeCount   `json:"dislikes"`
 }
 
+// ThreadStats contains statistics for a single forum thread
 type ThreadStats struct {
 	AuthorStatsMap *map[AuthorID]*AuthorStats `json:"authorStatsMap"`
 	PostMap        *map[PostID]*gisqus.Post   `json:"postMap"`
@@ -34,6 +49,7 @@ type ThreadStats struct {
 	TotalReplies   ReplyCount                 `json:"totalReplies"`
 }
 
+// MakeThreadStats produces an instance of ThreadStats given a sampling of posts.
 func (d *Drisqus) MakeThreadStats(posts []*gisqus.Post) *ThreadStats {
 
 	postMap := make(map[PostID]*gisqus.Post)
@@ -66,8 +82,8 @@ func (d *Drisqus) MakeThreadStats(posts []*gisqus.Post) *ThreadStats {
 			dislikes += post.Dislikes
 		}
 		if post.Parent != 0 { // let's count replies. roots don't have parents (are not replies) and are not orphans
-			parentId := strconv.Itoa(post.Parent)
-			parentPost, exists := postMap[PostID(parentId)]
+			parentID := strconv.Itoa(post.Parent)
+			parentPost, exists := postMap[PostID(parentID)]
 			if !exists {
 				// it's an orphan post - cannot attribute reply to parent
 				orphanCount++
@@ -98,58 +114,4 @@ func (d *Drisqus) MakeThreadStats(posts []*gisqus.Post) *ThreadStats {
 		Totaldislikes:  DislikeCount(dislikes),
 		TotalReplies:   ReplyCount(replies),
 	}
-}
-
-type AuthorReplyCount struct {
-	ReplierName AuthorUsername `json:"replierName"`
-	AuthorName  AuthorUsername `json:"authorName"`
-	Replies     ReplyCount     `json:"replies"`
-}
-
-func (arc *AuthorReplyCount) MarshalJSON() ([]byte, error) {
-	replies := strconv.Itoa(int(arc.Replies))
-	oneEl := `["` + string(arc.ReplierName) + `","` + string(arc.AuthorName) + `",` + replies + `]`
-
-	return []byte(oneEl), nil
-}
-
-func (d *Drisqus) MakeReplyGroups(posts []*gisqus.Post) *[]AuthorReplyCount {
-
-	postMap := make(map[PostID]*gisqus.Post)
-
-	for _, post := range posts {
-		postMap[PostID(post.ID)] = post
-	}
-
-	authorMap := make(map[AuthorUsername]map[AuthorUsername]int)
-
-	for _, post := range postMap {
-		// let's count replies.
-		if post.Parent != 0 { // roots don't have parents (are not replies)
-			parentId := strconv.Itoa(post.Parent)
-			// it's not an orphan post, otherwise could not attribute reply to parent
-			if parentPost, exists := postMap[PostID(parentId)]; exists {
-				var parentAuthorsMap map[AuthorUsername]int
-				if parentAuthorsMap, exists = authorMap[AuthorUsername(post.Author.Username)]; !exists {
-					parentAuthorsMap = make(map[AuthorUsername]int)
-					authorMap[AuthorUsername(post.Author.Username)] = parentAuthorsMap
-				}
-				parentAuthorsMap[AuthorUsername(parentPost.Author.Username)]++
-			}
-		}
-	}
-
-	var replySlice []AuthorReplyCount
-
-	for replier, parentMap := range authorMap {
-		for author, replies := range parentMap {
-			replySlice = append(replySlice, AuthorReplyCount{
-				ReplierName: replier,
-				AuthorName:  author,
-				Replies:     ReplyCount(replies),
-			})
-		}
-	}
-
-	return &replySlice
 }
