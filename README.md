@@ -28,7 +28,6 @@ then pass it to Drisqus:
     ...
     g := NewGisqus("api key")
     d := NewDrisqus(g)
-    values := url.Values{}
     ctx, cancel := context.WithCancel(context.TODO())
 ```
 
@@ -36,13 +35,13 @@ One can then proceed to make calls against Disqus' endpoints. Calls do not suppo
 
 ```Go
     
-    posts, err := d.PostList(ctx, values)
+    forums, err := d.ForumInteresting(ctx)
     if err != nil {
         ...
     }
-    fmt.Println(posts[0].ID)
+    fmt.Println(forums[0].forum.Name)
 ```
-Methods that support the "pages" parameter will retrieve pages of size 100. If pages is set to -1, all pages are retrieved.
+Methods that support the "pages" parameter will retrieve pages of size 100 (or less when 100 is not supported by Disqus). If pages is set to -1, all pages are retrieved.
 
 ### Data drilling and statistics
 Drisqus makes it really is to drill down in Disqus' API and calculate statistics.
@@ -65,9 +64,44 @@ As an example, let's pick the latest thread from a forum and check out which com
         ...
     }
     forumID := forums[0].Forum.ID
+    threads, err := d.ForumThreadsQuick(ctx, forumID, 1)
+    if err != nil {
+        ...
+    }
+    threadID := threads[0].ID
+    posts := d.ThreadPostsQuick(ctx, threadID, -1)
+    postsByParent := make(map[string]*gisqus.Post)
+  
+    for _, post := range posts {
+        postsByParent[post.parent] = post    
+    }
     
-     
+    postsWithoutReplies := []*gisqus.Post
+    for _, post := range posts {
+        if _, exists := postsByParent[post.ID]; !exists {
+            postsWithoutReplies = append(postsWithoutReplies, post)  
+        }
+    }
+    
+    authorsWithoutRepliesMap := make(map[string]bool) 
+    for _, post := range postsWithoutReplies {
+        authorsWithoutRepliesMap[post.Author.ID] = true
+    }
+    authorsWithoutReplies := []string
+    
+    for authorID, _ := range authorsWithoutRepliesMap {
+        authorsWithoutReplies = append(authorsWithoutReplies, authorID)
+    }
 ```
+
+#### d3.js support
+Drisqus includes a handful of methods for [d3.js](https://d3js.org/) support in the file drisqus_d3js.go. They make various kinds of aggregate data into
+slices, for use by many d3.js diagrams.
+
+
+An example of diagrams with data created by MakePostCountSlice :
+
+![authors by post count](assets/authorsbypostcount.png)
 
 ### Notes
 All calls are cancellable, so they won't catastrophically block on a call chain.
