@@ -1,3 +1,6 @@
+// Copyright Piero de Salvia.
+// All Rights Reserved
+
 /*
 t.Skip() the tests based on the flag.
 */

@@ -1,3 +1,6 @@
+// Copyright Piero de Salvia.
+// All Rights Reserved
+
 // Package drisqus is a high-level wrapper over Disqus' API
 package drisqus
 
