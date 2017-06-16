@@ -1,5 +1,11 @@
 package drisqus
 
+import (
+	"strconv"
+
+	"github.com/pierods/gisqus"
+)
+
 // RepliesInThread  is used by MakeReplySlice
 type RepliesInThread struct {
 	ID       AuthorID
