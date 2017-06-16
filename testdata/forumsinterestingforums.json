@@ -1,0 +1,383 @@
+{
+  "cursor": {
+    "prev": null,
+    "hasNext": false,
+    "next": null,
+    "hasPrev": null,
+    "total": null,
+    "id": null,
+    "more": false
+  },
+  "code": 0,
+  "response": {
+    "items": [
+      {
+        "reason": "583 comments this week",
+        "id": "forums.Forum?id=2373958"
+      },
+      {
+        "reason": "4,089 comments this week",
+        "id": "forums.Forum?id=2228666"
+      },
+      {
+        "reason": "7,787 comments this week",
+        "id": "forums.Forum?id=770598"
+      },
+      {
+        "reason": "344 comments this week",
+        "id": "forums.Forum?id=2168707"
+      },
+      {
+        "reason": "2,039 comments this week",
+        "id": "forums.Forum?id=2422664"
+      }
+    ],
+    "objects": {
+      "forums.Forum?id=770598": {
+        "raw_guidelines": null,
+        "twitterName": "MapleLeafsHS",
+        "guidelines": null,
+        "favicon": {
+          "permalink": "https://disqus.com/api/forums/favicons/mapleleafshotstove.jpg",
+          "cache": "https://c.disquscdn.com/uploads/forums/77/598/favicon.png"
+        },
+        "disableDisqusBranding": false,
+        "id": "mapleleafshotstove",
+        "createdAt": "2011-04-21T18:47:32.503946",
+        "category": "Sports",
+        "founder": "9408501",
+        "daysAlive": 0,
+        "installCompleted": true,
+        "pk": "770598",
+        "channel": null,
+        "description": "",
+        "raw_description": "The leading Toronto Maple Leafs website. https://mapleleafshotstove.com/",
+        "adsReviewStatus": 1,
+        "permissions": {},
+        "name": "Maple Leafs Hot Stove",
+        "language": "en",
+        "settings": {
+          "adsDRNativeEnabled": false,
+          "disable3rdPartyTrackers": false,
+          "adsVideoEnabled": false,
+          "allowAnonPost": true,
+          "ssoRequired": false,
+          "unapproveLinks": false,
+          "linkAffiliationEnabled": false,
+          "adsProductLinksThumbnailsEnabled": false,
+          "hasCustomAvatar": true,
+          "organicDiscoveryEnabled": false,
+          "allowMedia": true,
+          "adsProductDisplayEnabled": false,
+          "discoveryLocked": false,
+          "adsEnabled": false,
+          "adsPositionTopEnabled": false,
+          "adsProductStoriesEnabled": false,
+          "adultContent": false,
+          "allowAnonVotes": false,
+          "adsProductVideoEnabled": false,
+          "mustVerify": true,
+          "mustVerifyEmail": true,
+          "audienceSyncEnabled": false,
+          "mediaembedEnabled": true,
+          "adsPositionBottomEnabled": false,
+          "adsProductLinksEnabled": false,
+          "validateAllPosts": false,
+          "adsSettingsLocked": false,
+          "isVIP": false,
+          "adsPositionInthreadEnabled": false
+        },
+        "organizationId": 583182,
+        "url": "https://mapleleafshotstove.com/",
+        "daysThreadAlive": 0,
+        "avatar": {
+          "small": {
+            "permalink": "https://disqus.com/api/forums/avatars/mapleleafshotstove.jpg?size=32",
+            "cache": "https://c.disquscdn.com/uploads/forums/77/598/avatar32.jpg?1435553857"
+          },
+          "large": {
+            "permalink": "https://disqus.com/api/forums/avatars/mapleleafshotstove.jpg?size=92",
+            "cache": "https://c.disquscdn.com/uploads/forums/77/598/avatar92.jpg?1435553857"
+          }
+        },
+        "signedUrl": "https://disq.us/?url=https%3A%2F%2Fmapleleafshotstove.com%2F&key=fX5rjvePNTkfxq_DltzsSg"
+      },
+      "forums.Forum?id=2373958": {
+        "raw_guidelines": null,
+        "twitterName": "",
+        "guidelines": null,
+        "favicon": {
+          "permalink": "https://disqus.com/api/forums/favicons/alloutdoor.jpg",
+          "cache": "https://c.disquscdn.com/uploads/forums/237/3958/favicon.png"
+        },
+        "disableDisqusBranding": false,
+        "id": "alloutdoor",
+        "createdAt": "2013-05-31T14:49:58.124863",
+        "category": "Living",
+        "founder": "37536641",
+        "daysAlive": 0,
+        "installCompleted": true,
+        "pk": "2373958",
+        "channel": null,
+        "description": "",
+        "raw_description": "",
+        "adsReviewStatus": 1,
+        "permissions": {},
+        "name": "AllOutdoor.com",
+        "language": "en",
+        "settings": {
+          "adsDRNativeEnabled": true,
+          "disable3rdPartyTrackers": false,
+          "adsVideoEnabled": false,
+          "allowAnonPost": false,
+          "ssoRequired": false,
+          "unapproveLinks": false,
+          "linkAffiliationEnabled": false,
+          "adsProductLinksThumbnailsEnabled": true,
+          "hasCustomAvatar": true,
+          "organicDiscoveryEnabled": true,
+          "allowMedia": true,
+          "adsProductDisplayEnabled": true,
+          "discoveryLocked": false,
+          "adsEnabled": true,
+          "adsPositionTopEnabled": true,
+          "adsProductStoriesEnabled": true,
+          "adultContent": false,
+          "allowAnonVotes": false,
+          "adsProductVideoEnabled": false,
+          "mustVerify": true,
+          "mustVerifyEmail": true,
+          "audienceSyncEnabled": false,
+          "mediaembedEnabled": true,
+          "adsPositionBottomEnabled": false,
+          "adsProductLinksEnabled": true,
+          "validateAllPosts": false,
+          "adsSettingsLocked": false,
+          "isVIP": false,
+          "adsPositionInthreadEnabled": true
+        },
+        "organizationId": 1839155,
+        "url": "http://www.alloutdoor.com/",
+        "daysThreadAlive": 0,
+        "avatar": {
+          "small": {
+            "permalink": "https://disqus.com/api/forums/avatars/alloutdoor.jpg?size=32",
+            "cache": "https://c.disquscdn.com/uploads/forums/237/3958/avatar32.jpg?1373132514"
+          },
+          "large": {
+            "permalink": "https://disqus.com/api/forums/avatars/alloutdoor.jpg?size=92",
+            "cache": "https://c.disquscdn.com/uploads/forums/237/3958/avatar92.jpg?1373132514"
+          }
+        },
+        "signedUrl": "http://disq.us/?url=http%3A%2F%2Fwww.alloutdoor.com%2F&key=_eYHIhY-bRLWTz53PDXAzQ"
+      },
+      "forums.Forum?id=2422664": {
+        "raw_guidelines": null,
+        "twitterName": "",
+        "guidelines": null,
+        "favicon": {
+          "permalink": "https://disqus.com/api/forums/favicons/nintendoeverything.jpg",
+          "cache": "https://c.disquscdn.com/uploads/forums/242/2664/favicon.png"
+        },
+        "disableDisqusBranding": false,
+        "id": "nintendoeverything",
+        "createdAt": "2013-06-29T13:31:40.489448",
+        "category": "Games",
+        "founder": "34967974",
+        "daysAlive": 0,
+        "installCompleted": true,
+        "pk": "2422664",
+        "channel": null,
+        "description": "",
+        "raw_description": "",
+        "adsReviewStatus": 1,
+        "permissions": {},
+        "name": "Nintendo Everything",
+        "language": "en",
+        "settings": {
+          "adsDRNativeEnabled": false,
+          "disable3rdPartyTrackers": false,
+          "adsVideoEnabled": false,
+          "allowAnonPost": false,
+          "ssoRequired": false,
+          "unapproveLinks": false,
+          "linkAffiliationEnabled": false,
+          "adsProductLinksThumbnailsEnabled": false,
+          "hasCustomAvatar": true,
+          "organicDiscoveryEnabled": true,
+          "allowMedia": true,
+          "adsProductDisplayEnabled": false,
+          "discoveryLocked": false,
+          "adsEnabled": false,
+          "adsPositionTopEnabled": false,
+          "adsProductStoriesEnabled": false,
+          "adultContent": false,
+          "allowAnonVotes": false,
+          "adsProductVideoEnabled": false,
+          "mustVerify": true,
+          "mustVerifyEmail": true,
+          "audienceSyncEnabled": false,
+          "mediaembedEnabled": true,
+          "adsPositionBottomEnabled": false,
+          "adsProductLinksEnabled": false,
+          "validateAllPosts": false,
+          "adsSettingsLocked": false,
+          "isVIP": false,
+          "adsPositionInthreadEnabled": false
+        },
+        "organizationId": 1456879,
+        "url": "http://nintendoeverything.com/",
+        "daysThreadAlive": 0,
+        "avatar": {
+          "small": {
+            "permalink": "https://disqus.com/api/forums/avatars/nintendoeverything.jpg?size=32",
+            "cache": "https://c.disquscdn.com/uploads/forums/242/2664/avatar32.jpg?1388763512"
+          },
+          "large": {
+            "permalink": "https://disqus.com/api/forums/avatars/nintendoeverything.jpg?size=92",
+            "cache": "https://c.disquscdn.com/uploads/forums/242/2664/avatar92.jpg?1388763512"
+          }
+        },
+        "signedUrl": "http://disq.us/?url=http%3A%2F%2Fnintendoeverything.com%2F&key=0FoN3Y_0QXvAeYhV03-DmA"
+      },
+      "forums.Forum?id=2228666": {
+        "raw_guidelines": null,
+        "twitterName": "",
+        "guidelines": null,
+        "favicon": {
+          "permalink": "https://disqus.com/api/forums/favicons/militarycom.jpg",
+          "cache": "https://c.disquscdn.com/uploads/forums/222/8666/favicon.png"
+        },
+        "disableDisqusBranding": false,
+        "id": "militarycom",
+        "createdAt": "2013-03-08T17:41:09.594605",
+        "category": "News",
+        "founder": "45266840",
+        "daysAlive": 0,
+        "installCompleted": true,
+        "pk": "2228666",
+        "channel": null,
+        "description": "",
+        "raw_description": "",
+        "adsReviewStatus": 1,
+        "permissions": {},
+        "name": "Military.com",
+        "language": "en",
+        "settings": {
+          "adsDRNativeEnabled": false,
+          "disable3rdPartyTrackers": true,
+          "adsVideoEnabled": false,
+          "allowAnonPost": false,
+          "ssoRequired": false,
+          "unapproveLinks": true,
+          "linkAffiliationEnabled": false,
+          "adsProductLinksThumbnailsEnabled": false,
+          "hasCustomAvatar": false,
+          "organicDiscoveryEnabled": false,
+          "allowMedia": false,
+          "adsProductDisplayEnabled": false,
+          "discoveryLocked": false,
+          "adsEnabled": false,
+          "adsPositionTopEnabled": false,
+          "adsProductStoriesEnabled": false,
+          "adultContent": false,
+          "allowAnonVotes": false,
+          "adsProductVideoEnabled": false,
+          "mustVerify": true,
+          "mustVerifyEmail": true,
+          "audienceSyncEnabled": false,
+          "mediaembedEnabled": false,
+          "adsPositionBottomEnabled": false,
+          "adsProductLinksEnabled": false,
+          "validateAllPosts": false,
+          "adsSettingsLocked": false,
+          "isVIP": false,
+          "adsPositionInthreadEnabled": false
+        },
+        "organizationId": 1739036,
+        "url": "http://military.com/",
+        "daysThreadAlive": 0,
+        "avatar": {
+          "small": {
+            "permalink": "https://disqus.com/api/forums/avatars/militarycom.jpg?size=32",
+            "cache": "//a.disquscdn.com/1495487563/images/noavatar32.png"
+          },
+          "large": {
+            "permalink": "https://disqus.com/api/forums/avatars/militarycom.jpg?size=92",
+            "cache": "//a.disquscdn.com/1495487563/images/noavatar92.png"
+          }
+        },
+        "signedUrl": "http://disq.us/?url=http%3A%2F%2Fmilitary.com%2F&key=iaRkyt7HRQZ5ERi2EjlsJg"
+      },
+      "forums.Forum?id=2168707": {
+        "raw_guidelines": null,
+        "twitterName": "",
+        "guidelines": null,
+        "favicon": {
+          "permalink": "https://disqus.com/api/forums/favicons/ecw.jpg",
+          "cache": "https://c.disquscdn.com/uploads/forums/216/8707/favicon.png"
+        },
+        "disableDisqusBranding": false,
+        "id": "ecw",
+        "createdAt": "2013-02-02T15:31:29.633137",
+        "category": "Business",
+        "founder": "42780773",
+        "daysAlive": 0,
+        "installCompleted": true,
+        "pk": "2168707",
+        "channel": null,
+        "description": "<p>News and information about LENR/Cold Fusion and related energy technology</p>",
+        "raw_description": "News and information about LENR/Cold Fusion and related energy technology",
+        "adsReviewStatus": 1,
+        "permissions": {},
+        "name": "E-Cat World",
+        "language": "en",
+        "settings": {
+          "adsDRNativeEnabled": false,
+          "disable3rdPartyTrackers": false,
+          "adsVideoEnabled": false,
+          "allowAnonPost": true,
+          "ssoRequired": false,
+          "unapproveLinks": false,
+          "linkAffiliationEnabled": true,
+          "adsProductLinksThumbnailsEnabled": false,
+          "hasCustomAvatar": false,
+          "organicDiscoveryEnabled": true,
+          "allowMedia": true,
+          "adsProductDisplayEnabled": false,
+          "discoveryLocked": false,
+          "adsEnabled": true,
+          "adsPositionTopEnabled": false,
+          "adsProductStoriesEnabled": false,
+          "adultContent": false,
+          "allowAnonVotes": false,
+          "adsProductVideoEnabled": false,
+          "mustVerify": true,
+          "mustVerifyEmail": true,
+          "audienceSyncEnabled": false,
+          "mediaembedEnabled": true,
+          "adsPositionBottomEnabled": true,
+          "adsProductLinksEnabled": true,
+          "validateAllPosts": true,
+          "adsSettingsLocked": false,
+          "isVIP": false,
+          "adsPositionInthreadEnabled": false
+        },
+        "organizationId": 1697284,
+        "url": "http://www.e-catworld.com/",
+        "daysThreadAlive": 0,
+        "avatar": {
+          "small": {
+            "permalink": "https://disqus.com/api/forums/avatars/ecw.jpg?size=32",
+            "cache": "//a.disquscdn.com/1495487563/images/noavatar32.png"
+          },
+          "large": {
+            "permalink": "https://disqus.com/api/forums/avatars/ecw.jpg?size=92",
+            "cache": "//a.disquscdn.com/1495487563/images/noavatar92.png"
+          }
+        },
+        "signedUrl": "http://disq.us/?url=http%3A%2F%2Fwww.e-catworld.com%2F&key=zAaiTfmn1DT2ug8BbU9KQA"
+      }
+    }
+  }
+}

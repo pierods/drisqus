@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="common.js"></script>
+  <script src="bubblechart.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+
+  <script src="cv.js"></script>
+  <script src="http://vizjs.org/viz.v1.1.0.min.js"></script>
+  <script src="https://d3js.org/d3-color.v1.min.js"></script>
+  <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+  <script src="cv.js"></script>
+  <style>
+    svg text {
+      fill: grey;
+      font-size: 11px;
+    }
+
+    svg .values text {
+      pointer-events: none;
+      stroke-width: 0.5px;
+    }
+
+    .groups:hover {
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <span style="font-family: 'Inconsolata', monospace;"><a href="/">home</a></span><br>
+  <span id="title" style="font-family: 'Inconsolata', monospace;"></span>
+  <div id="panel" style="border: 1px solid;position: relative; left: 30px;font-family: 'Inconsolata', monospace;background-color: #e6f2ff;"></div>
+  <svg id="svgpanel" width="1000" height="1000" font-family="sans-serif" font-size="10" text-anchor="middle"></svg>
+  <script>
+    textPanel = document.getElementById("panel")
+    svg = document.getElementById("svgpanel")
+    thread = getURLParameter('thread')
+    title = getURLParameter('threadTitle')
+    titleP = document.getElementById("title")
+    titleP.innerHTML = "Thread: " + title + "<br> Options: " + makeFunctionA("follow", "followThread();") + " " + makeFunctionA("unfollow", "unfollowThread();") +
+      " " + makeFunctionA("make stats", "makeStats();") + " " + makeFunctionA("authors by post count", "graphAuthorsByPostCount(thread);") +
+      " " + makeFunctionA("authors by replies had", "graphAuthorsByRepliesHad(thread);") +
+      " " + makeFunctionA("authors by replies written", "graphAuthorsByRepliesWritten(thread);") +
+      " " + makeFunctionA("authors by like count", "graphAuthorsByLikeCount(thread);") +
+      " " + makeFunctionA("authors by dislike count", "graphAuthorsByDislikeCount(thread);") +
+      " " + makeFunctionA("authors by mutual interest", "graphAuthorsByMutualInterest(thread);")
+  </script>
+
+  <script>
+    function refreshThread() {
+      textPanel.innerHTML = "Refreshing..."
+      var postList = new XMLHttpRequest();
+      postList.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          textPanel.innerHTML = ""
+          var posts = JSON.parse(postList.responseText);
+          posts.forEach(function(post) {
+            textPanel.innerHTML = textPanel.innerHTML + trimTo40(noParagraphs(post.author.name)) + " - " + trimToOneRow(noParagraphs(post.message)) + "</span>" + "<br>"
+          })
+        }
+      }
+      postList.open("GET", "http://localhost:30000/threadposts?thread=" + thread, true);
+      postList.send();
+    }
+    var intervalId
+
+    function followThread() {
+      refreshThread()
+      intervalId = setInterval(refreshThread, 30000);
+    }
+
+    function unfollowThread() {
+      clearInterval(intervalId)
+      textPanel.innerHTML = "Unfollowed"
+    }
+
+    function makeStats() {
+      textPanel.innerHTML = "Computing thread stats..."
+      var statsRequest = new XMLHttpRequest();
+      statsRequest.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          var stats = JSON.parse(statsRequest.responseText);
+          sample = Object.keys(stats.postMap).length
+          textPanel.innerHTML = "Number of posts sampled: " + sample + "<br>"
+          textPanel.innerHTML += "Number of root posts : " + stats.rootPosts + "<br>"
+          textPanel.innerHTML += "Number of orphan posts : " + stats.orphanPosts + "<br>"
+          orphanRate = stats.orphanPosts / sample
+          textPanel.innerHTML += "orphan rate : " + orphanRate + "<br>"
+          textPanel.innerHTML += "total likes : " + stats.totalLikes + "<br>"
+          textPanel.innerHTML += "total dislikes : " + stats.totalDislikes + "<br>"
+          textPanel.innerHTML += "total replies : " + stats.totalReplies + "<br>"
+          replyRate = sample / stats.totalReplies
+          textPanel.innerHTML += "reply rate : " + replyRate + "<br>"
+
+          authorStatsMap = stats.authorStatsMap
+          textPanel.innerHTML += "<p>" + "Author Stats : "
+          Object.keys(authorStatsMap).forEach(function(key) {
+            textPanel.innerHTML += authorStatsMap[key].username +
+              " - ID: " + authorStatsMap[key].id +
+              " - posts: " + authorStatsMap[key].posts +
+              " replies: " + authorStatsMap[key].replies +
+              " likes: " + authorStatsMap[key].likes +
+              " dislikes: " + authorStatsMap[key].dislikes +
+              "<br>"
+          })
+        }
+      }
+      statsRequest.open("GET", "http://localhost:30000/makestats?thread=" + thread, true);
+      statsRequest.send();
+    }
+
+    function graphAuthorsByPostCount(thread) {
+      svg.parentNode.replaceChild(svg.cloneNode(false), svg);
+      textPanel.innerHTML = "Computing thread stats..."
+      makeBubbleChart("makepostcountslice?thread=" + thread)
+      textPanel.innerHTML = "Users by post count"
+      svg = document.getElementById("svgpanel")
+    }
+
+    function graphAuthorsByRepliesHad(thread) {
+      svg.parentNode.replaceChild(svg.cloneNode(false), svg);
+      textPanel.innerHTML = "Computing thread stats..."
+      makeBubbleChart("makereplyhadslice?thread=" + thread)
+      textPanel.innerHTML = "Users by replies had"
+      svg = document.getElementById("svgpanel")
+    }
+
+    function graphAuthorsByRepliesWritten(thread) {
+      svg.parentNode.replaceChild(svg.cloneNode(false), svg);
+      textPanel.innerHTML = "Computing thread stats..."
+      makeBubbleChart("makereplywrittenslice?thread=" + thread)
+      textPanel.innerHTML = "Users by replies written"
+      svg = document.getElementById("svgpanel")
+    }
+
+    function graphAuthorsByLikeCount(thread) {
+      svg.parentNode.replaceChild(svg.cloneNode(false), svg);
+      textPanel.innerHTML = "Computing thread stats..."
+      makeBubbleChart("makelikecountslice?thread=" + thread)
+      textPanel.innerHTML = "Users by like count"
+      svg = document.getElementById("svgpanel")
+    }
+
+    function graphAuthorsByDislikeCount(thread) {
+      svg.parentNode.replaceChild(svg.cloneNode(false), svg);
+      textPanel.innerHTML = "Computing thread stats..."
+      makeBubbleChart("makedislikecountslice?thread=" + thread)
+      textPanel.innerHTML = "Users by dislike count"
+      svg = document.getElementById("svgpanel")
+    }
+
+    function graphAuthorsByMutualInterest(thread) {
+      svg.parentNode.replaceChild(svg.cloneNode(false), svg);
+      textPanel.innerHTML = "Computing thread stats..."
+      makeCV("makereplygroupslice?thread=" + thread)
+      textPanel.innerHTML = "Users by mutual interest"
+      svg = document.getElementById("svgpanel")
+    }
+  </script>
+</body>
+
+</html>

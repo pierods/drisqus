@@ -1,0 +1,72 @@
+{
+  "code": 0,
+  "response": {
+    "raw_guidelines": null,
+    "twitterName": "MapleLeafsHS",
+    "guidelines": null,
+    "favicon": {
+      "permalink": "https://disqus.com/api/forums/favicons/mapleleafshotstove.jpg",
+      "cache": "https://c.disquscdn.com/uploads/forums/77/598/favicon.png"
+    },
+    "disableDisqusBranding": false,
+    "id": "mapleleafshotstove",
+    "createdAt": "2011-04-21T18:47:32.503946",
+    "category": "Sports",
+    "founder": "9408501",
+    "daysAlive": 0,
+    "installCompleted": true,
+    "pk": "770598",
+    "channel": null,
+    "description": "<p>The leading Toronto Maple Leafs website. <a href=\"https://disq.us/url?url=https%3A%2F%2Fmapleleafshotstove.com%2F%3A5cUMWxTbEmKt-tVhAde2p0PfXZY&amp;cuid=770598\" rel=\"nofollow noopener\">https://mapleleafshotstove....</a></p>",
+    "raw_description": "The leading Toronto Maple Leafs website. https://mapleleafshotstove.com/",
+    "adsReviewStatus": 1,
+    "permissions": {},
+    "name": "Maple Leafs Hot Stove",
+    "language": "en",
+    "settings": {
+      "adsDRNativeEnabled": false,
+      "disable3rdPartyTrackers": false,
+      "adsVideoEnabled": false,
+      "allowAnonPost": true,
+      "ssoRequired": false,
+      "unapproveLinks": false,
+      "linkAffiliationEnabled": false,
+      "adsProductLinksThumbnailsEnabled": false,
+      "hasCustomAvatar": true,
+      "organicDiscoveryEnabled": false,
+      "allowMedia": true,
+      "adsProductDisplayEnabled": false,
+      "discoveryLocked": false,
+      "adsEnabled": false,
+      "adsPositionTopEnabled": false,
+      "adsProductStoriesEnabled": false,
+      "adultContent": false,
+      "allowAnonVotes": false,
+      "adsProductVideoEnabled": false,
+      "mustVerify": true,
+      "mustVerifyEmail": true,
+      "audienceSyncEnabled": false,
+      "mediaembedEnabled": true,
+      "adsPositionBottomEnabled": false,
+      "adsProductLinksEnabled": false,
+      "validateAllPosts": false,
+      "adsSettingsLocked": false,
+      "isVIP": false,
+      "adsPositionInthreadEnabled": false
+    },
+    "organizationId": 583182,
+    "url": "https://mapleleafshotstove.com/",
+    "daysThreadAlive": 0,
+    "avatar": {
+      "small": {
+        "permalink": "https://disqus.com/api/forums/avatars/mapleleafshotstove.jpg?size=32",
+        "cache": "https://c.disquscdn.com/uploads/forums/77/598/avatar32.jpg?1435553857"
+      },
+      "large": {
+        "permalink": "https://disqus.com/api/forums/avatars/mapleleafshotstove.jpg?size=92",
+        "cache": "https://c.disquscdn.com/uploads/forums/77/598/avatar92.jpg?1435553857"
+      }
+    },
+    "signedUrl": "https://disq.us/?url=https%3A%2F%2Fmapleleafshotstove.com%2F&key=fX5rjvePNTkfxq_DltzsSg"
+  }
+}

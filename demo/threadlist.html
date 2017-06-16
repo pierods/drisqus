@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="common.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+</head>
+
+<body>
+  <span style="font-family: 'Inconsolata', monospace;"><a href="/">home</a><br></span>
+  <span style="font-family: 'Inconsolata', monospace;">Would you like to explore <a href="#" onclick="findPopular();">popular</a> or <a href="#" onclick="findHot();">hot</a>
+    or <a href="#" onclick="findLatest();">latest</a> threads?</span>
+  <div id="panel" style="border: 1px solid;position: relative; left: 30px;font-family: 'Inconsolata', monospace;background-color: #e6f2ff;"></div>
+  </div>
+  <script>
+    threadDiv = document.getElementById("panel")
+
+    function findPopular() {
+      threadDiv.innerHTML = "Getting popular threads..."
+      forumId = getURLParameter('forum')
+      var popularRequest = new XMLHttpRequest();
+      popularRequest.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {
+            threadDiv.innerHTML = ""
+            var threads = JSON.parse(popularRequest.responseText);
+            threads.forEach(function(thread) {
+              threadDiv.innerHTML = threadDiv.innerHTML + "<p>" + makeA(thread.title + " - id=" + thread.id + " - " + thread.posts + " posts", "threadtools.html?thread=" + thread.id + "&threadTitle=" + thread.title) + "<br>"
+            })
+          } else {
+            threadDiv.innerHTML = latestRequest.responseText
+          }
+        }
+      }
+      popularRequest.open("GET", "http://localhost:30000/popularthreads?forum=" + forumId, true);
+      popularRequest.send();
+    }
+
+    function findHot() {
+      threadDiv.innerHTML = "Getting hot threads..."
+      forumId = getURLParameter('forum')
+      var hotRequest = new XMLHttpRequest();
+      hotRequest.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {
+            threadDiv.innerHTML = ""
+            var threads = JSON.parse(hotRequest.responseText);
+            threads.forEach(function(thread) {
+              threadDiv.innerHTML = threadDiv.innerHTML + "<p>" + makeA(thread.title + " - " + thread.posts, "threadtools.html?thread=" + thread.id + "&threadTitle=" + thread.title) + "<br>"
+            })
+          } else {
+            threadDiv.innerHTML = latestRequest.responseText
+          }
+        }
+      }
+      hotRequest.open("GET", "http://localhost:30000/hotthreads?forum=" + forumId, true);
+      hotRequest.send();
+    }
+
+    function findLatest() {
+      threadDiv.innerHTML = "Getting latest threads..."
+      forumId = getURLParameter('forum')
+      var latestRequest = new XMLHttpRequest();
+      latestRequest.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {
+            threadDiv.innerHTML = ""
+            var threads = JSON.parse(latestRequest.responseText);
+            threads.forEach(function(thread) {
+              threadDiv.innerHTML = threadDiv.innerHTML + "<p>" + makeA(thread.title + " - " + thread.posts, "threadtools.html?thread=" + thread.id + "&threadTitle=" + thread.title) + "<br>"
+            })
+          } else {
+            threadDiv.innerHTML = latestRequest.responseText
+          }
+        }
+      }
+      latestRequest.open("GET", "http://localhost:30000/threadlatest?forum=" + forumId, true);
+      latestRequest.send();
+    }
+  </script>
+</body>
+
+</html>

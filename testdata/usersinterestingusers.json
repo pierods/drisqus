@@ -1,0 +1,198 @@
+{
+  "cursor": {
+    "prev": null,
+    "hasNext": false,
+    "next": null,
+    "hasPrev": null,
+    "total": null,
+    "id": null,
+    "more": false
+  },
+  "code": 0,
+  "response": {
+    "items": [
+      {
+        "reason": "Comments on Breitbart News Network and Right Side Network",
+        "id": "auth.User?id=46351054"
+      },
+      {
+        "reason": "Comments on 9anime.to and KissAnime Chatroom",
+        "id": "auth.User?id=195792235"
+      },
+      {
+        "reason": "Comments on Wccftech",
+        "id": "auth.User?id=207149055"
+      },
+      {
+        "reason": "Comments on Breitbart News Network",
+        "id": "auth.User?id=75686064"
+      },
+      {
+        "reason": "Comments on Wccftech",
+        "id": "auth.User?id=160076302"
+      }
+    ],
+    "objects": {
+      "auth.User?id=160076302": {
+        "username": "anticonsoleshit",
+        "about": "",
+        "name": "de ja ful",
+        "disable3rdPartyTrackers": false,
+        "isPowerContributor": false,
+        "isAnonymous": false,
+        "rep": 6.920859999999999,
+        "profileUrl": "https://disqus.com/by/anticonsoleshit/",
+        "url": "",
+        "reputation": 6.920859999999999,
+        "location": "",
+        "isPrivate": false,
+        "signedUrl": "",
+        "isPrimary": true,
+        "joinedAt": "2015-06-02T14:43:19",
+        "id": "160076302",
+        "reputationLabel": "High",
+        "avatar": {
+          "small": {
+            "permalink": "https://disqus.com/api/users/avatars/anticonsoleshit.jpg",
+            "cache": "https://c.disquscdn.com/uploads/users/16007/6302/avatar32.jpg?1494598267"
+          },
+          "isCustom": true,
+          "permalink": "https://disqus.com/api/users/avatars/anticonsoleshit.jpg",
+          "cache": "https://c.disquscdn.com/uploads/users/16007/6302/avatar92.jpg?1494598267",
+          "large": {
+            "permalink": "https://disqus.com/api/users/avatars/anticonsoleshit.jpg",
+            "cache": "https://c.disquscdn.com/uploads/users/16007/6302/avatar92.jpg?1494598267"
+          }
+        }
+      },
+      "auth.User?id=46351054": {
+        "username": "FretFrenzy",
+        "about": "I support draining the swamp, Gitmo for the traitors and death penalty for the pedos.",
+        "name": "Jill ✓ˢʷᵃᵐᵖ ᵈʳᵃᶦᶰᵉʳ",
+        "disable3rdPartyTrackers": false,
+        "isPowerContributor": false,
+        "isAnonymous": false,
+        "rep": 16.214308000000003,
+        "profileUrl": "https://disqus.com/by/FretFrenzy/",
+        "url": "",
+        "reputation": 16.214308000000003,
+        "location": "American by birth, Southern by the Grace of God, Trumpster because I have a working brain.",
+        "isPrivate": false,
+        "signedUrl": "",
+        "isPrimary": true,
+        "joinedAt": "2013-03-23T15:56:18",
+        "id": "46351054",
+        "reputationLabel": "High",
+        "avatar": {
+          "small": {
+            "permalink": "https://disqus.com/api/users/avatars/FretFrenzy.jpg",
+            "cache": "https://c.disquscdn.com/uploads/users/4635/1054/avatar32.jpg?1494553733"
+          },
+          "isCustom": true,
+          "permalink": "https://disqus.com/api/users/avatars/FretFrenzy.jpg",
+          "cache": "https://c.disquscdn.com/uploads/users/4635/1054/avatar92.jpg?1494553733",
+          "large": {
+            "permalink": "https://disqus.com/api/users/avatars/FretFrenzy.jpg",
+            "cache": "https://c.disquscdn.com/uploads/users/4635/1054/avatar92.jpg?1494553733"
+          }
+        }
+      },
+      "auth.User?id=195792235": {
+        "username": "El_Incoloro_Rey",
+        "about": "ι lιĸe тнe word ιndolence'. ιт мaĸeѕ мy lazιneѕѕ ѕoυnd claѕѕy. ﾍ(￣▽￣*)ﾉ. Discord: Colorless.King#1794",
+        "name": "⛧тнє ¢σℓσяℓєѕѕ кιиg💜",
+        "disable3rdPartyTrackers": false,
+        "isPowerContributor": false,
+        "isAnonymous": false,
+        "rep": 5.229126,
+        "profileUrl": "https://disqus.com/by/El_Incoloro_Rey/",
+        "url": "",
+        "reputation": 5.229126,
+        "location": "Pennsylvania",
+        "isPrivate": false,
+        "signedUrl": "",
+        "isPrimary": true,
+        "joinedAt": "2016-02-09T05:48:59",
+        "id": "195792235",
+        "reputationLabel": "High",
+        "avatar": {
+          "small": {
+            "permalink": "https://disqus.com/api/users/avatars/El_Incoloro_Rey.jpg",
+            "cache": "https://c.disquscdn.com/uploads/users/19579/2235/avatar32.jpg?1495571341"
+          },
+          "isCustom": true,
+          "permalink": "https://disqus.com/api/users/avatars/El_Incoloro_Rey.jpg",
+          "cache": "https://c.disquscdn.com/uploads/users/19579/2235/avatar92.jpg?1495571341",
+          "large": {
+            "permalink": "https://disqus.com/api/users/avatars/El_Incoloro_Rey.jpg",
+            "cache": "https://c.disquscdn.com/uploads/users/19579/2235/avatar92.jpg?1495571341"
+          }
+        }
+      },
+      "auth.User?id=207149055": {
+        "username": "disqus_NSPN6uAHsB",
+        "about": "",
+        "name": "John Smith",
+        "disable3rdPartyTrackers": false,
+        "isPowerContributor": false,
+        "isAnonymous": false,
+        "rep": 10.748035999999999,
+        "profileUrl": "https://disqus.com/by/disqus_NSPN6uAHsB/",
+        "url": "",
+        "reputation": 10.748035999999999,
+        "location": "",
+        "isPrivate": false,
+        "signedUrl": "",
+        "isPrimary": true,
+        "joinedAt": "2016-05-06T22:58:48",
+        "id": "207149055",
+        "reputationLabel": "High",
+        "avatar": {
+          "small": {
+            "permalink": "https://disqus.com/api/users/avatars/disqus_NSPN6uAHsB.jpg",
+            "cache": "https://c.disquscdn.com/uploads/users/20714/9055/avatar32.jpg?1488950903"
+          },
+          "isCustom": true,
+          "permalink": "https://disqus.com/api/users/avatars/disqus_NSPN6uAHsB.jpg",
+          "cache": "https://c.disquscdn.com/uploads/users/20714/9055/avatar92.jpg?1488950903",
+          "large": {
+            "permalink": "https://disqus.com/api/users/avatars/disqus_NSPN6uAHsB.jpg",
+            "cache": "https://c.disquscdn.com/uploads/users/20714/9055/avatar92.jpg?1488950903"
+          }
+        }
+      },
+      "auth.User?id=75686064": {
+        "username": "Deplorable_dxp",
+        "about": "",
+        "name": "doorsxp",
+        "disable3rdPartyTrackers": false,
+        "isPowerContributor": false,
+        "isAnonymous": false,
+        "rep": 9.367354,
+        "profileUrl": "https://disqus.com/by/Deplorable_dxp/",
+        "url": "",
+        "reputation": 9.367354,
+        "location": "",
+        "isPrivate": false,
+        "signedUrl": "",
+        "isPrimary": true,
+        "joinedAt": "2013-10-02T05:47:21",
+        "id": "75686064",
+        "reputationLabel": "High",
+        "avatar": {
+          "small": {
+            "permalink": "https://disqus.com/api/users/avatars/Deplorable_dxp.jpg",
+            "cache": "https://c.disquscdn.com/uploads/users/7568/6064/avatar32.jpg?1495726992"
+          },
+          "isCustom": true,
+          "permalink": "https://disqus.com/api/users/avatars/Deplorable_dxp.jpg",
+          "cache": "https://c.disquscdn.com/uploads/users/7568/6064/avatar92.jpg?1495726992",
+          "large": {
+            "permalink": "https://disqus.com/api/users/avatars/Deplorable_dxp.jpg",
+            "cache": "https://c.disquscdn.com/uploads/users/7568/6064/avatar92.jpg?1495726992"
+          }
+        }
+      }
+    }
+  }
+}

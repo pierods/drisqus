@@ -1,0 +1,1608 @@
+{
+  "cursor": {
+    "prev": null,
+    "hasNext": false,
+    "next": "4776620:1:0",
+    "hasPrev": false,
+    "total": null,
+    "id": "4776620:1:0",
+    "more": false
+  },
+  "code": 0,
+  "response": [
+    {
+      "founder": "172746617",
+      "twitterName": "",
+      "guidelines": null,
+      "favicon": {
+        "permalink": "https://disqus.com/api/forums/favicons/channel-animeforthepeople.jpg",
+        "cache": "https://c.disquscdn.com/uploads/forums/363/1218/favicon.png"
+      },
+      "disableDisqusBranding": false,
+      "id": "channel-animeforthepeople",
+      "createdAt": "2015-06-04T17:40:19.641774",
+      "category": "Entertainment",
+      "raw_guidelines": null,
+      "daysAlive": 15,
+      "installCompleted": true,
+      "pk": "3631218",
+      "channel": {
+        "bannerColor": "green",
+        "slug": "animeforthepeople",
+        "dateAdded": "2015-06-04T21:40:19",
+        "name": "Anime For The People",
+        "banner": "https://c.disquscdn.com/uploads/channels/63/banner.png?1489344694",
+        "bannerColorHex": "#8BCF93",
+        "id": "63",
+        "hidden": false,
+        "isAggregation": false,
+        "avatar": null,
+        "enableCuration": false,
+        "isCategory": false,
+        "adminOnly": false,
+        "options": {
+          "aboutUrlPath": "//disqus.com/home/channel/animeforthepeople/discussion/channel-animeforthepeople/how_to_aftp/",
+          "description": "Discuss new anime episodes, along with classics.",
+          "coverImage": {
+            "cache": "//media.disquscdn.com/home/channels/aftp/aftp-coverphoto.png"
+          },
+          "banner_timestamp": 1489344694,
+          "modEmail": "",
+          "alertBackground": "//media.disquscdn.com/home/channels/aftp/aftp-coverphoto.png",
+          "favicon": "//media.disquscdn.com/home/channels/aftp/aftp-avatar.png",
+          "tile": "//media.disquscdn.com/home/channels/aftp/aftp-tile.png",
+          "isCurationOnlyChannel": false,
+          "titleLogo": {
+            "small": "//media.disquscdn.com/home/channels/aftp/aftp-logo.png",
+            "cache": "//media.disquscdn.com/home/channels/aftp/aftp-logo.png"
+          },
+          "banner_color": "green"
+        },
+        "owner_id": "119700861"
+      },
+      "description": "<p>Discuss new anime episodes, along with classics.</p>",
+      "raw_description": "Discuss new anime episodes, along with classics.",
+      "adsReviewStatus": 0,
+      "permissions": {},
+      "name": "Anime For The People",
+      "language": "en",
+      "settings": {
+        "adsDRNativeEnabled": false,
+        "disable3rdPartyTrackers": true,
+        "adsVideoEnabled": false,
+        "allowAnonPost": false,
+        "ssoRequired": false,
+        "unapproveLinks": false,
+        "linkAffiliationEnabled": true,
+        "adsProductLinksThumbnailsEnabled": false,
+        "hasCustomAvatar": true,
+        "organicDiscoveryEnabled": false,
+        "allowMedia": true,
+        "adsProductDisplayEnabled": false,
+        "discoveryLocked": false,
+        "adsEnabled": false,
+        "adsPositionTopEnabled": false,
+        "adsProductStoriesEnabled": false,
+        "adultContent": false,
+        "allowAnonVotes": false,
+        "adsProductVideoEnabled": false,
+        "mustVerify": true,
+        "mustVerifyEmail": true,
+        "audienceSyncEnabled": false,
+        "mediaembedEnabled": true,
+        "adsPositionBottomEnabled": false,
+        "adsProductLinksEnabled": false,
+        "validateAllPosts": false,
+        "adsSettingsLocked": false,
+        "isVIP": false,
+        "adsPositionInthreadEnabled": false
+      },
+      "organizationId": 3644738,
+      "url": "https://animeforthepeople.disq.us",
+      "daysThreadAlive": 15,
+      "avatar": {
+        "small": {
+          "permalink": "https://disqus.com/api/forums/avatars/channel-animeforthepeople.jpg?size=32",
+          "cache": "https://c.disquscdn.com/uploads/forums/363/1218/avatar32.jpg?1433454917"
+        },
+        "large": {
+          "permalink": "https://disqus.com/api/forums/avatars/channel-animeforthepeople.jpg?size=92",
+          "cache": "https://c.disquscdn.com/uploads/forums/363/1218/avatar92.jpg?1433454917"
+        }
+      },
+      "signedUrl": "https://animeforthepeople.disq.us"
+    },
+    {
+      "founder": "172741351",
+      "twitterName": "",
+      "guidelines": null,
+      "favicon": {
+        "permalink": "https://disqus.com/api/forums/favicons/channel-breakingnews.jpg",
+        "cache": "https://c.disquscdn.com/uploads/forums/367/7626/favicon.png"
+      },
+      "disableDisqusBranding": false,
+      "id": "channel-breakingnews",
+      "createdAt": "2015-07-08T22:16:54.612122",
+      "category": "",
+      "raw_guidelines": null,
+      "daysAlive": 3,
+      "installCompleted": true,
+      "pk": "3677626",
+      "channel": {
+        "bannerColor": "red",
+        "slug": "breakingnews",
+        "dateAdded": "2015-07-09T02:16:55",
+        "name": "{BREAKING NEWS} ",
+        "banner": "https://c.disquscdn.com/uploads/channels/149/banner.png?1443315824",
+        "bannerColorHex": "#F05F70",
+        "id": "149",
+        "hidden": false,
+        "isAggregation": false,
+        "avatar": "https://c.disquscdn.com/uploads/channels/149/avatar.png?1442425111",
+        "enableCuration": false,
+        "isCategory": false,
+        "adminOnly": false,
+        "options": {
+          "aboutUrlPath": "/home/channel/breakingnews/discussion/channel-breakingnews/breaking_news_reboot/",
+          "description": "Discussing news articles on all the hot topics of the day. If it's news, this is the place to Disqus it! Article discussions will auto-close after 3 days in order to keep things fresh.",
+          "banner_color": "red",
+          "banner_timestamp": 1443315824,
+          "avatar_timestamp": 1442425111,
+          "tile": "//media.disquscdn.com/home/channels/breakingnews/breakingnews-tile.png"
+        },
+        "owner_id": "28072666"
+      },
+      "description": "",
+      "raw_description": "Discussing news articles on all the hot topics of the day. If it's news, this is the place to Disqus it! Article discussions will auto-close after 3 days in order to keep things fresh.",
+      "adsReviewStatus": 0,
+      "permissions": {},
+      "name": "{BREAKING NEWS} ",
+      "language": "en",
+      "settings": {
+        "adsDRNativeEnabled": false,
+        "disable3rdPartyTrackers": true,
+        "adsVideoEnabled": false,
+        "allowAnonPost": false,
+        "ssoRequired": false,
+        "unapproveLinks": false,
+        "linkAffiliationEnabled": true,
+        "adsProductLinksThumbnailsEnabled": false,
+        "hasCustomAvatar": false,
+        "organicDiscoveryEnabled": false,
+        "allowMedia": true,
+        "adsProductDisplayEnabled": false,
+        "discoveryLocked": false,
+        "adsEnabled": false,
+        "adsPositionTopEnabled": false,
+        "adsProductStoriesEnabled": false,
+        "adultContent": false,
+        "allowAnonVotes": false,
+        "adsProductVideoEnabled": false,
+        "mustVerify": true,
+        "mustVerifyEmail": true,
+        "audienceSyncEnabled": false,
+        "mediaembedEnabled": true,
+        "adsPositionBottomEnabled": false,
+        "adsProductLinksEnabled": false,
+        "validateAllPosts": false,
+        "adsSettingsLocked": false,
+        "isVIP": false,
+        "adsPositionInthreadEnabled": false
+      },
+      "organizationId": 3644696,
+      "url": "http://breakingnews.disq.us",
+      "daysThreadAlive": 3,
+      "avatar": {
+        "small": {
+          "permalink": "https://disqus.com/api/forums/avatars/channel-breakingnews.jpg?size=32",
+          "cache": "//a.disquscdn.com/1495647272/images/noavatar32.png"
+        },
+        "large": {
+          "permalink": "https://disqus.com/api/forums/avatars/channel-breakingnews.jpg?size=92",
+          "cache": "//a.disquscdn.com/1495647272/images/noavatar92.png"
+        }
+      },
+      "signedUrl": "http://breakingnews.disq.us"
+    },
+    {
+      "founder": "168032935",
+      "twitterName": "",
+      "guidelines": null,
+      "favicon": {
+        "permalink": "https://disqus.com/api/forums/favicons/channel-gifs.jpg",
+        "cache": "https://c.disquscdn.com/uploads/forums/371/8567/favicon.png"
+      },
+      "disableDisqusBranding": false,
+      "id": "channel-gifs",
+      "createdAt": "2015-08-03T20:28:05.388059",
+      "category": "",
+      "raw_guidelines": null,
+      "daysAlive": 4,
+      "installCompleted": true,
+      "pk": "3718567",
+      "channel": {
+        "bannerColor": "red",
+        "slug": "gifs",
+        "dateAdded": "2015-08-04T00:28:05",
+        "name": "GIFs",
+        "banner": null,
+        "bannerColorHex": "#F05F70",
+        "id": "6621",
+        "hidden": false,
+        "isAggregation": false,
+        "avatar": "https://c.disquscdn.com/uploads/channels/6621/avatar.png?1455549355",
+        "enableCuration": false,
+        "isCategory": false,
+        "adminOnly": false,
+        "options": {
+          "aboutUrlPath": "/home/channel/gifs/discussion/channel-gifs/gifs_the_official_rules_for_this_channel/",
+          "description": "For sharing  GIFs, memes,  and other images.  Please read our \"Community Guidelines\" before opening a discussion or posting if you are unfamiliar with how our channel works.",
+          "banner_color": "red",
+          "banner_timestamp": 1484445910,
+          "alertBackground": "//media.disquscdn.com/home/channels/gifs/gifs-banner-5.gif",
+          "avatar_timestamp": 1455549355,
+          "tile": "//media.disquscdn.com/home/channels/gifs/gifs-tile-2.gif",
+          "titleLogo": {
+            "small": "//media.disquscdn.com/home/channels/gifs/gifs-logo.png",
+            "cache": "//media.disquscdn.com/home/channels/gifs/gifs-logo.png"
+          },
+          "coverImage": {
+            "cache": "//media.disquscdn.com/home/channels/gifs/gifs-banner-5.gif"
+          }
+        },
+        "owner_id": "82004756"
+      },
+      "description": "<p>Discussing news articles on all the hot topics of the day. If it's news, this is the place to Disqus it! Article discussions will auto-close after 3 days in order to keep things fresh.</p>",
+      "raw_description": "For sharing  GIFs, memes,  and other images.  Please read our \"Community Guidelines\" before opening a discussion or posting if you are unfamiliar with how our channel works.",
+      "adsReviewStatus": 0,
+      "permissions": {},
+      "name": "GIFs",
+      "language": "en",
+      "settings": {
+        "adsDRNativeEnabled": false,
+        "disable3rdPartyTrackers": true,
+        "adsVideoEnabled": false,
+        "allowAnonPost": false,
+        "ssoRequired": false,
+        "unapproveLinks": false,
+        "linkAffiliationEnabled": true,
+        "adsProductLinksThumbnailsEnabled": false,
+        "hasCustomAvatar": false,
+        "organicDiscoveryEnabled": false,
+        "allowMedia": true,
+        "adsProductDisplayEnabled": false,
+        "discoveryLocked": false,
+        "adsEnabled": false,
+        "adsPositionTopEnabled": false,
+        "adsProductStoriesEnabled": false,
+        "adultContent": false,
+        "allowAnonVotes": false,
+        "adsProductVideoEnabled": false,
+        "mustVerify": true,
+        "mustVerifyEmail": true,
+        "audienceSyncEnabled": false,
+        "mediaembedEnabled": true,
+        "adsPositionBottomEnabled": false,
+        "adsProductLinksEnabled": false,
+        "validateAllPosts": false,
+        "adsSettingsLocked": false,
+        "isVIP": false,
+        "adsPositionInthreadEnabled": false
+      },
+      "organizationId": 3644770,
+      "url": "http://gifs.disq.us",
+      "daysThreadAlive": 4,
+      "avatar": {
+        "small": {
+          "permalink": "https://disqus.com/api/forums/avatars/channel-gifs.jpg?size=32",
+          "cache": "//a.disquscdn.com/1495647272/images/noavatar32.png"
+        },
+        "large": {
+          "permalink": "https://disqus.com/api/forums/avatars/channel-gifs.jpg?size=92",
+          "cache": "//a.disquscdn.com/1495647272/images/noavatar92.png"
+        }
+      },
+      "signedUrl": "http://gifs.disq.us"
+    },
+    {
+      "founder": "172846978",
+      "twitterName": "",
+      "guidelines": null,
+      "favicon": {
+        "permalink": "https://disqus.com/api/forums/favicons/channel-animeisloveanimeislife.jpg",
+        "cache": "https://c.disquscdn.com/uploads/forums/376/6767/favicon.png"
+      },
+      "disableDisqusBranding": false,
+      "id": "channel-animeisloveanimeislife",
+      "createdAt": "2015-09-02T12:24:52.357234",
+      "category": "",
+      "raw_guidelines": null,
+      "daysAlive": 7,
+      "installCompleted": true,
+      "pk": "3766767",
+      "channel": {
+        "bannerColor": "purple",
+        "slug": "animeisloveanimeislife",
+        "dateAdded": "2015-09-02T16:24:52",
+        "name": "Anime is Love, Anime is Life!",
+        "banner": "https://c.disquscdn.com/uploads/channels/14411/banner.png?1495276092",
+        "bannerColorHex": "#B180C9",
+        "id": "14411",
+        "hidden": false,
+        "isAggregation": false,
+        "avatar": "https://c.disquscdn.com/uploads/channels/14411/avatar.png?1490284475",
+        "enableCuration": false,
+        "isCategory": false,
+        "adminOnly": false,
+        "options": {
+          "aboutUrlPath": "/home/channel/animeisloveanimeislife/discussion/channel-animeisloveanimeislife/community_ail2_guidelines_info/",
+          "description": "A channel made solely for the discussion of anime and manga! Come for a chance to enjoy the time to talk about your favourite series!!",
+          "banner_color": "purple",
+          "banner_timestamp": 1495276092,
+          "avatar_timestamp": 1490284475,
+          "primaryTopics": [
+            {
+              "identifier": "anime",
+              "displayName": "Anime",
+              "description": "Discuss anything that has to do with Japanese Animation."
+            },
+            {
+              "identifier": "manga",
+              "displayName": "Manga",
+              "description": "Discuss anything that has to do with Japanese Comics."
+            },
+            {
+              "identifier": "community",
+              "displayName": "Community",
+              "description": "Share your thoughts and opinions about your friends on AIL^2 and our community. Ex: Disqus Ships, Favorite User and anything related."
+            },
+            {
+              "identifier": "game",
+              "displayName": "Game",
+              "description": "Have some fun, and be creative. Ex: Quizzes, Scenarios, and anything related."
+            },
+            {
+              "identifier": "other",
+              "displayName": "Other",
+              "description": "For everything that doesn't exactly fit into the norm. Ex: Art, Music, AMV's, and anything related."
+            }
+          ],
+          "tile": "//media.disquscdn.com/home/channels/animeisloveanimeislife/animeisloveanimeislife-tile.jpg",
+          "titleLogo": {
+            "small": "//media.disquscdn.com/home/channels/animeisloveanimeislife/channel-logo.png",
+            "cache": "//media.disquscdn.com/home/channels/animeisloveanimeislife/channel-logo.png"
+          },
+          "categories": {
+            "Game": "Have some fun, and be creative. Ex: Quizzes, Scenarios, and anything related.",
+            "Other": "For everything that doesn't exactly fit into the norm. Ex: Art, Music, AMV's, and anything related.",
+            "Anime": "Discuss anything that has to do with Japanese Animation.",
+            "Community": "Share your thoughts and opinions about your friends on AIL^2 and our community. Ex: Disqus Ships, Favorite User and anything related.",
+            "Manga": "Discuss anything that has to do with Japanese Comics."
+          }
+        },
+        "owner_id": "168609552"
+      },
+      "description": "",
+      "raw_description": "A channel made solely for the discussion of anime and manga! Come for a chance to enjoy the time to talk about your favourite series!!",
+      "adsReviewStatus": 0,
+      "permissions": {},
+      "name": "Anime is Love, Anime is Life!",
+      "language": "en",
+      "settings": {
+        "adsDRNativeEnabled": false,
+        "disable3rdPartyTrackers": true,
+        "adsVideoEnabled": false,
+        "allowAnonPost": false,
+        "ssoRequired": false,
+        "unapproveLinks": false,
+        "linkAffiliationEnabled": true,
+        "adsProductLinksThumbnailsEnabled": false,
+        "hasCustomAvatar": false,
+        "organicDiscoveryEnabled": false,
+        "allowMedia": true,
+        "adsProductDisplayEnabled": false,
+        "discoveryLocked": false,
+        "adsEnabled": false,
+        "adsPositionTopEnabled": false,
+        "adsProductStoriesEnabled": false,
+        "adultContent": false,
+        "allowAnonVotes": false,
+        "adsProductVideoEnabled": false,
+        "mustVerify": true,
+        "mustVerifyEmail": true,
+        "audienceSyncEnabled": false,
+        "mediaembedEnabled": true,
+        "adsPositionBottomEnabled": false,
+        "adsProductLinksEnabled": false,
+        "validateAllPosts": false,
+        "adsSettingsLocked": false,
+        "isVIP": false,
+        "adsPositionInthreadEnabled": false
+      },
+      "organizationId": 3644680,
+      "url": "http://animeisloveanimeislife.disq.us",
+      "daysThreadAlive": 7,
+      "avatar": {
+        "small": {
+          "permalink": "https://disqus.com/api/forums/avatars/channel-animeisloveanimeislife.jpg?size=32",
+          "cache": "//a.disquscdn.com/1495647272/images/noavatar32.png"
+        },
+        "large": {
+          "permalink": "https://disqus.com/api/forums/avatars/channel-animeisloveanimeislife.jpg?size=92",
+          "cache": "//a.disquscdn.com/1495647272/images/noavatar92.png"
+        }
+      },
+      "signedUrl": "http://animeisloveanimeislife.disq.us"
+    },
+    {
+      "founder": "180172079",
+      "twitterName": "",
+      "guidelines": null,
+      "favicon": {
+        "permalink": "https://disqus.com/api/forums/favicons/channel-animerelated.jpg",
+        "cache": "https://c.disquscdn.com/uploads/forums/385/1904/favicon.png"
+      },
+      "disableDisqusBranding": false,
+      "id": "channel-animerelated",
+      "createdAt": "2015-10-25T16:04:56.388300",
+      "category": "",
+      "raw_guidelines": null,
+      "daysAlive": 7,
+      "installCompleted": true,
+      "pk": "3851904",
+      "channel": {
+        "bannerColor": "red",
+        "slug": "animerelated",
+        "dateAdded": "2015-10-25T20:04:56",
+        "name": "Anime Related!",
+        "banner": "https://c.disquscdn.com/uploads/channels/30218/banner.png?1486907314",
+        "bannerColorHex": "#F05F70",
+        "id": "30218",
+        "hidden": false,
+        "isAggregation": false,
+        "avatar": "https://c.disquscdn.com/uploads/channels/30218/avatar.png?1476384882",
+        "enableCuration": false,
+        "isCategory": false,
+        "adminOnly": false,
+        "options": {
+          "aboutUrlPath": "/home/discussion/channel-animerelated/anime_related_community_guidelines_46/",
+          "description": "Anime Related! We talk about anime and manga, of all genres and characters. We, as a Familia, have the most fun in ages, and would love for you to join us, too.\r\nMay we all enjoy anime together~!",
+          "banner_color": "red",
+          "banner_timestamp": 1486907314,
+          "avatar_timestamp": 1476384882,
+          "titleLogo": {
+            "small": "//media.disquscdn.com/home/channels/animerelated/animerelated-logo.png",
+            "cache": "//media.disquscdn.com/home/channels/animerelated/animerelated-logo.png"
+          }
+        },
+        "owner_id": "152196156"
+      },
+      "description": "<p>For sharing  GIFs, memes,  and other images.  Please read our \"Community Guidelines\" before opening a discussion or posting if you are unfamiliar with how our channel works.</p>",
+      "raw_description": "Anime Related! We talk about anime and manga, of all genres and characters. We, as a Familia, have the most fun in ages, and would love for you to join us, too.\r\nMay we all enjoy anime together~!",
+      "adsReviewStatus": 0,
+      "permissions": {},
+      "name": "Anime Related!",
+      "language": "en",
+      "settings": {
+        "adsDRNativeEnabled": false,
+        "disable3rdPartyTrackers": true,
+        "adsVideoEnabled": false,
+        "allowAnonPost": false,
+        "ssoRequired": false,
+        "unapproveLinks": false,
+        "linkAffiliationEnabled": true,
+        "adsProductLinksThumbnailsEnabled": false,
+        "hasCustomAvatar": false,
+        "organicDiscoveryEnabled": false,
+        "allowMedia": true,
+        "adsProductDisplayEnabled": false,
+        "discoveryLocked": false,
+        "adsEnabled": false,
+        "adsPositionTopEnabled": false,
+        "adsProductStoriesEnabled": false,
+        "adultContent": false,
+        "allowAnonVotes": false,
+        "adsProductVideoEnabled": false,
+        "mustVerify": true,
+        "mustVerifyEmail": true,
+        "audienceSyncEnabled": false,
+        "mediaembedEnabled": true,
+        "adsPositionBottomEnabled": false,
+        "adsProductLinksEnabled": false,
+        "validateAllPosts": false,
+        "adsSettingsLocked": false,
+        "isVIP": false,
+        "adsPositionInthreadEnabled": false
+      },
+      "organizationId": 3644686,
+      "url": "http://animerelated.disq.us",
+      "daysThreadAlive": 7,
+      "avatar": {
+        "small": {
+          "permalink": "https://disqus.com/api/forums/avatars/channel-animerelated.jpg?size=32",
+          "cache": "//a.disquscdn.com/1495647272/images/noavatar32.png"
+        },
+        "large": {
+          "permalink": "https://disqus.com/api/forums/avatars/channel-animerelated.jpg?size=92",
+          "cache": "//a.disquscdn.com/1495647272/images/noavatar92.png"
+        }
+      },
+      "signedUrl": "http://animerelated.disq.us"
+    },
+    {
+      "founder": "180182836",
+      "twitterName": "",
+      "guidelines": null,
+      "favicon": {
+        "permalink": "https://disqus.com/api/forums/favicons/channel-scanime.jpg",
+        "cache": "https://c.disquscdn.com/uploads/forums/385/2052/favicon.png"
+      },
+      "disableDisqusBranding": false,
+      "id": "channel-scanime",
+      "createdAt": "2015-10-25T18:09:00.315091",
+      "category": "",
+      "raw_guidelines": null,
+      "daysAlive": 7,
+      "installCompleted": true,
+      "pk": "3852052",
+      "channel": {
+        "bannerColor": "gray",
+        "slug": "scanime",
+        "dateAdded": "2015-10-25T22:09:00",
+        "name": "SCAnime",
+        "banner": "https://c.disquscdn.com/uploads/channels/30246/banner.png?1493651458",
+        "bannerColorHex": "#7F919E",
+        "id": "30246",
+        "hidden": false,
+        "isAggregation": false,
+        "avatar": "https://c.disquscdn.com/uploads/channels/30246/avatar.png?1492440553",
+        "enableCuration": false,
+        "isCategory": false,
+        "adminOnly": false,
+        "options": {
+          "aboutUrlPath": "/home/channel/scanime/discussion/channel-scanime/welcome_have_fun__/",
+          "description": "Anime, Manga, and the Otaku lifestyle. Please read the Community Guidelines for references on how to make discussion and for the home rules. I hope you'll enjoy your stay with us!",
+          "banner_color": "gray",
+          "banner_timestamp": 1493651458,
+          "avatar_timestamp": 1492440553,
+          "primaryTopics": [
+            {
+              "identifier": "anime-manga",
+              "displayName": "Anime/Manga",
+              "description": "Discuss anything that has to do with Japanese Animation & Comics."
+            },
+            {
+              "identifier": "game",
+              "displayName": "Game",
+              "description": "Create your own fun using anime characters like quizzes, scenarios & anything related."
+            },
+            {
+              "identifier": "forum",
+              "displayName": "Forum",
+              "description": "Share & Discuss your thoughts & opinions about the community in general."
+            },
+            {
+              "identifier": "important-notice",
+              "displayName": "Important Notice",
+              "description": "For Moderator use only. Any announcement and news related to the channel update."
+            },
+            {
+              "identifier": "other",
+              "displayName": "Other",
+              "description": "Discuss about AMV, fan art, fan fiction , reviews & anything related."
+            }
+          ],
+          "titleLogo": {
+            "small": "//media.disquscdn.com/home/channels/scanime/channel-logo.png",
+            "cache": "//media.disquscdn.com/home/channels/scanime/channel-logo.png"
+          },
+          "categories": {
+            "Forum": "Share & Discuss your thoughts & opinions about the community in general.",
+            "Anime/Manga": "Discuss anything that has to do with Japanese Animation & Comics.",
+            "Other": "Discuss about AMV, fan art, fan fiction , reviews & anything related.",
+            "Game": "Create your own fun using anime characters like quizzes, scenarios & anything related.",
+            "Important Notice": "For Moderator use only. Any announcement and news related to the channel update."
+          }
+        },
+        "owner_id": "131318388"
+      },
+      "description": "",
+      "raw_description": "Anime, Manga, and the Otaku lifestyle. Please read the Community Guidelines for references on how to make discussion and for the home rules. I hope you'll enjoy your stay with us!",
+      "adsReviewStatus": 0,
+      "permissions": {},
+      "name": "SCAnime",
+      "language": "en",
+      "settings": {
+        "adsDRNativeEnabled": false,
+        "disable3rdPartyTrackers": true,
+        "adsVideoEnabled": false,
+        "allowAnonPost": false,
+        "ssoRequired": false,
+        "unapproveLinks": false,
+        "linkAffiliationEnabled": true,
+        "adsProductLinksThumbnailsEnabled": false,
+        "hasCustomAvatar": false,
+        "organicDiscoveryEnabled": false,
+        "allowMedia": true,
+        "adsProductDisplayEnabled": false,
+        "discoveryLocked": false,
+        "adsEnabled": false,
+        "adsPositionTopEnabled": false,
+        "adsProductStoriesEnabled": false,
+        "adultContent": false,
+        "allowAnonVotes": false,
+        "adsProductVideoEnabled": false,
+        "mustVerify": true,
+        "mustVerifyEmail": true,
+        "audienceSyncEnabled": false,
+        "mediaembedEnabled": true,
+        "adsPositionBottomEnabled": false,
+        "adsProductLinksEnabled": false,
+        "validateAllPosts": false,
+        "adsSettingsLocked": false,
+        "isVIP": false,
+        "adsPositionInthreadEnabled": false
+      },
+      "organizationId": 3644702,
+      "url": "http://scanime.disq.us",
+      "daysThreadAlive": 7,
+      "avatar": {
+        "small": {
+          "permalink": "https://disqus.com/api/forums/avatars/channel-scanime.jpg?size=32",
+          "cache": "//a.disquscdn.com/1495647272/images/noavatar32.png"
+        },
+        "large": {
+          "permalink": "https://disqus.com/api/forums/avatars/channel-scanime.jpg?size=92",
+          "cache": "//a.disquscdn.com/1495647272/images/noavatar92.png"
+        }
+      },
+      "signedUrl": "http://scanime.disq.us"
+    },
+    {
+      "founder": "192276514",
+      "twitterName": null,
+      "guidelines": null,
+      "favicon": {
+        "permalink": "https://disqus.com/api/forums/favicons/channel-animenow.jpg",
+        "cache": "https://c.disquscdn.com/uploads/forums/397/8013/favicon.png"
+      },
+      "disableDisqusBranding": false,
+      "id": "channel-animenow",
+      "createdAt": "2016-01-15T21:12:20.716294",
+      "category": null,
+      "raw_guidelines": null,
+      "daysAlive": 7,
+      "installCompleted": true,
+      "pk": "3978013",
+      "channel": {
+        "bannerColor": "blue",
+        "slug": "animenow",
+        "dateAdded": "2016-01-16T02:12:21",
+        "name": "Anime Now",
+        "banner": "https://c.disquscdn.com/uploads/channels/52452/banner.png?1487475583",
+        "bannerColorHex": "#2E9FFF",
+        "id": "52452",
+        "hidden": false,
+        "isAggregation": false,
+        "avatar": "https://c.disquscdn.com/uploads/channels/52452/avatar.png?1491420722",
+        "enableCuration": false,
+        "isCategory": false,
+        "adminOnly": false,
+        "options": {
+          "banner_color": "blue",
+          "banner_timestamp": 1487475583,
+          "description": "Hiya~! All about anime and manga please do have fun. \r\nLong live the bakas whoo!!!    (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧",
+          "avatar_timestamp": 1491420722
+        },
+        "owner_id": "139228161"
+      },
+      "description": "<p>A channel made solely for the discussion of anime and manga! Come for a chance to enjoy the time to talk about your favourite series!!</p>",
+      "raw_description": "Hiya~! All about anime and manga please do have fun. \r\nLong live the bakas whoo!!!    (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧",
+      "adsReviewStatus": 0,
+      "permissions": {},
+      "name": "Anime Now",
+      "language": "en",
+      "settings": {
+        "adsDRNativeEnabled": false,
+        "disable3rdPartyTrackers": true,
+        "adsVideoEnabled": false,
+        "allowAnonPost": false,
+        "ssoRequired": false,
+        "unapproveLinks": false,
+        "linkAffiliationEnabled": false,
+        "adsProductLinksThumbnailsEnabled": false,
+        "hasCustomAvatar": false,
+        "organicDiscoveryEnabled": false,
+        "allowMedia": true,
+        "adsProductDisplayEnabled": false,
+        "discoveryLocked": false,
+        "adsEnabled": false,
+        "adsPositionTopEnabled": false,
+        "adsProductStoriesEnabled": false,
+        "adultContent": false,
+        "allowAnonVotes": false,
+        "adsProductVideoEnabled": false,
+        "mustVerify": true,
+        "mustVerifyEmail": true,
+        "audienceSyncEnabled": false,
+        "mediaembedEnabled": true,
+        "adsPositionBottomEnabled": false,
+        "adsProductLinksEnabled": false,
+        "validateAllPosts": false,
+        "adsSettingsLocked": false,
+        "isVIP": false,
+        "adsPositionInthreadEnabled": false
+      },
+      "organizationId": 2874561,
+      "url": "http://animenow.disq.us",
+      "daysThreadAlive": 7,
+      "avatar": {
+        "small": {
+          "permalink": "https://disqus.com/api/forums/avatars/channel-animenow.jpg?size=32",
+          "cache": "//a.disquscdn.com/1495647272/images/noavatar32.png"
+        },
+        "large": {
+          "permalink": "https://disqus.com/api/forums/avatars/channel-animenow.jpg?size=92",
+          "cache": "//a.disquscdn.com/1495647272/images/noavatar92.png"
+        }
+      },
+      "signedUrl": "http://animenow.disq.us"
+    },
+    {
+      "founder": "194333652",
+      "twitterName": "",
+      "guidelines": null,
+      "favicon": {
+        "permalink": "https://disqus.com/api/forums/favicons/channel-fuwafuwatime.jpg",
+        "cache": "https://c.disquscdn.com/uploads/forums/400/3344/favicon.png"
+      },
+      "disableDisqusBranding": false,
+      "id": "channel-fuwafuwatime",
+      "createdAt": "2016-01-31T12:37:31.975702",
+      "category": "",
+      "raw_guidelines": null,
+      "daysAlive": 7,
+      "installCompleted": true,
+      "pk": "4003344",
+      "channel": {
+        "bannerColor": "purple",
+        "slug": "fuwafuwatime",
+        "dateAdded": "2016-01-31T17:37:32",
+        "name": "~Fuwa Fuwa Time~",
+        "banner": "https://c.disquscdn.com/uploads/channels/56664/banner.png?1474030984",
+        "bannerColorHex": "#B180C9",
+        "id": "56664",
+        "hidden": true,
+        "isAggregation": false,
+        "avatar": "https://c.disquscdn.com/uploads/channels/56664/avatar.png?1454261852",
+        "enableCuration": false,
+        "isCategory": false,
+        "adminOnly": false,
+        "options": {
+          "aboutUrlPath": "/home/discussion/channel-fuwafuwatime/updated_channel_rules/",
+          "description": "The dark side of disqus, dedicated to blood, guts and ppl going nuts. Welcome to purgatory you sadistic bastards. Give us your worst~",
+          "banner_color": "purple",
+          "banner_timestamp": 1474030984,
+          "avatar_timestamp": 1454261852,
+          "titleLogo": {
+            "small": "//media.disquscdn.com/home/channels/fuwafuwatime/fft2.png",
+            "cache": "//media.disquscdn.com/home/channels/fuwafuwatime/fft2.png"
+          }
+        },
+        "owner_id": "139822684"
+      },
+      "description": "",
+      "raw_description": "The dark side of disqus, dedicated to blood, guts and ppl going nuts. Welcome to purgatory you sadistic bastards. Give us your worst~",
+      "adsReviewStatus": 0,
+      "permissions": {},
+      "name": "~Fuwa Fuwa Time~",
+      "language": "en",
+      "settings": {
+        "adsDRNativeEnabled": false,
+        "disable3rdPartyTrackers": true,
+        "adsVideoEnabled": false,
+        "allowAnonPost": false,
+        "ssoRequired": false,
+        "unapproveLinks": false,
+        "linkAffiliationEnabled": false,
+        "adsProductLinksThumbnailsEnabled": false,
+        "hasCustomAvatar": false,
+        "organicDiscoveryEnabled": false,
+        "allowMedia": true,
+        "adsProductDisplayEnabled": false,
+        "discoveryLocked": false,
+        "adsEnabled": false,
+        "adsPositionTopEnabled": false,
+        "adsProductStoriesEnabled": false,
+        "adultContent": false,
+        "allowAnonVotes": false,
+        "adsProductVideoEnabled": false,
+        "mustVerify": true,
+        "mustVerifyEmail": true,
+        "audienceSyncEnabled": false,
+        "mediaembedEnabled": true,
+        "adsPositionBottomEnabled": false,
+        "adsProductLinksEnabled": false,
+        "validateAllPosts": false,
+        "adsSettingsLocked": false,
+        "isVIP": false,
+        "adsPositionInthreadEnabled": false
+      },
+      "organizationId": 2892936,
+      "url": "http://fuwafuwatime.disq.us",
+      "daysThreadAlive": 7,
+      "avatar": {
+        "small": {
+          "permalink": "https://disqus.com/api/forums/avatars/channel-fuwafuwatime.jpg?size=32",
+          "cache": "//a.disquscdn.com/1495647272/images/noavatar32.png"
+        },
+        "large": {
+          "permalink": "https://disqus.com/api/forums/avatars/channel-fuwafuwatime.jpg?size=92",
+          "cache": "//a.disquscdn.com/1495647272/images/noavatar92.png"
+        }
+      },
+      "signedUrl": "http://fuwafuwatime.disq.us"
+    },
+    {
+      "founder": "195639095",
+      "twitterName": null,
+      "guidelines": null,
+      "favicon": {
+        "permalink": "https://disqus.com/api/forums/favicons/channel-lunairlandofadventure.jpg",
+        "cache": "https://c.disquscdn.com/uploads/forums/401/5943/favicon.png"
+      },
+      "disableDisqusBranding": false,
+      "id": "channel-lunairlandofadventure",
+      "createdAt": "2016-02-08T03:22:55.759178",
+      "category": null,
+      "raw_guidelines": null,
+      "daysAlive": 7,
+      "installCompleted": true,
+      "pk": "4015943",
+      "channel": {
+        "bannerColor": "blue",
+        "slug": "lunairlandofadventure",
+        "dateAdded": "2016-02-08T08:22:56",
+        "name": "Lunair land of adventure",
+        "banner": "https://c.disquscdn.com/uploads/channels/58776/banner.png?1484523420",
+        "bannerColorHex": "#2E9FFF",
+        "id": "58776",
+        "hidden": false,
+        "isAggregation": false,
+        "avatar": "https://c.disquscdn.com/uploads/channels/58776/avatar.png?1484523496",
+        "enableCuration": false,
+        "isCategory": false,
+        "adminOnly": false,
+        "options": {
+          "description": "Channel owner:Alex Kat Lunair. A chill place for anime fans, roleplay and randomness No racism, bullying/bad trolling, porn or sex RP allowed",
+          "banner_color": "blue",
+          "banner_timestamp": 1484523420,
+          "avatar_timestamp": 1484523496,
+          "primaryTopics": [
+            {
+              "identifier": "roleplay",
+              "displayName": "Roleplay",
+              "description": "For roleplay & character biographies."
+            },
+            {
+              "identifier": "reviews",
+              "displayName": "Reviews",
+              "description": "For reviews on video games, anime etc."
+            },
+            {
+              "identifier": "comedy",
+              "displayName": "Comedy",
+              "description": "For memes, jokes, puns."
+            },
+            {
+              "identifier": "free",
+              "displayName": "Free",
+              "description": "For everything else."
+            }
+          ],
+          "categories": {
+            "Reviews": "For reviews on video games, anime etc.",
+            "Comedy": "For memes, jokes, puns.",
+            "Free": "For everything else.",
+            "Roleplay": "For roleplay & character biographies."
+          }
+        },
+        "owner_id": "201914709"
+      },
+      "description": "<p>Anime Related! We talk about anime and manga, of all genres and characters. We, as a Familia, have the most fun in ages, and would love for you to join us, too.<br>May we all enjoy anime together~!</p>",
+      "raw_description": "Channel owner:Alex Kat Lunair. A chill place for anime fans, roleplay and randomness No racism, bullying/bad trolling, porn or sex RP allowed",
+      "adsReviewStatus": 0,
+      "permissions": {},
+      "name": "Lunair land of adventure",
+      "language": "en",
+      "settings": {
+        "adsDRNativeEnabled": false,
+        "disable3rdPartyTrackers": true,
+        "adsVideoEnabled": false,
+        "allowAnonPost": false,
+        "ssoRequired": false,
+        "unapproveLinks": false,
+        "linkAffiliationEnabled": false,
+        "adsProductLinksThumbnailsEnabled": false,
+        "hasCustomAvatar": false,
+        "organicDiscoveryEnabled": false,
+        "allowMedia": true,
+        "adsProductDisplayEnabled": false,
+        "discoveryLocked": false,
+        "adsEnabled": false,
+        "adsPositionTopEnabled": false,
+        "adsProductStoriesEnabled": false,
+        "adultContent": false,
+        "allowAnonVotes": false,
+        "adsProductVideoEnabled": false,
+        "mustVerify": true,
+        "mustVerifyEmail": true,
+        "audienceSyncEnabled": false,
+        "mediaembedEnabled": true,
+        "adsPositionBottomEnabled": false,
+        "adsProductLinksEnabled": false,
+        "validateAllPosts": false,
+        "adsSettingsLocked": false,
+        "isVIP": false,
+        "adsPositionInthreadEnabled": false
+      },
+      "organizationId": 2902007,
+      "url": "http://lunairlandofadventure.disq.us",
+      "daysThreadAlive": 7,
+      "avatar": {
+        "small": {
+          "permalink": "https://disqus.com/api/forums/avatars/channel-lunairlandofadventure.jpg?size=32",
+          "cache": "//a.disquscdn.com/1495647272/images/noavatar32.png"
+        },
+        "large": {
+          "permalink": "https://disqus.com/api/forums/avatars/channel-lunairlandofadventure.jpg?size=92",
+          "cache": "//a.disquscdn.com/1495647272/images/noavatar92.png"
+        }
+      },
+      "signedUrl": "http://lunairlandofadventure.disq.us"
+    },
+    {
+      "founder": "202341715",
+      "twitterName": null,
+      "guidelines": null,
+      "favicon": {
+        "permalink": "https://disqus.com/api/forums/favicons/channel-kawaiianimeworld.jpg",
+        "cache": "https://c.disquscdn.com/uploads/forums/410/7146/favicon.png"
+      },
+      "disableDisqusBranding": false,
+      "id": "channel-kawaiianimeworld",
+      "createdAt": "2016-03-30T03:11:39.387492",
+      "category": null,
+      "raw_guidelines": null,
+      "daysAlive": 7,
+      "installCompleted": true,
+      "pk": "4107146",
+      "channel": {
+        "bannerColor": "red",
+        "slug": "kawaiianimeworld",
+        "dateAdded": "2016-03-30T07:11:39",
+        "name": "✿Kawaii Anime world✿",
+        "banner": "https://c.disquscdn.com/uploads/channels/80696/banner.png?1473603762",
+        "bannerColorHex": "#F05F70",
+        "id": "80696",
+        "hidden": false,
+        "isAggregation": false,
+        "avatar": "https://c.disquscdn.com/uploads/channels/80696/avatar.png?1470685717",
+        "enableCuration": false,
+        "isCategory": false,
+        "adminOnly": false,
+        "options": {
+          "banner_color": "red",
+          "banner_timestamp": 1473603762,
+          "description": "This channel for everyone who loves anime/manga and wanted to friends with all ^-^\r\nwe all are  looking forward to have wonderful time in here~\r\nlove you all ❤",
+          "avatar_timestamp": 1470685717
+        },
+        "owner_id": "130584901"
+      },
+      "description": "",
+      "raw_description": "This channel for everyone who loves anime/manga and wanted to friends with all ^-^\r\nwe all are  looking forward to have wonderful time in here~\r\nlove you all ❤",
+      "adsReviewStatus": 0,
+      "permissions": {},
+      "name": "✿Kawaii Anime world✿",
+      "language": "en",
+      "settings": {
+        "adsDRNativeEnabled": false,
+        "disable3rdPartyTrackers": true,
+        "adsVideoEnabled": false,
+        "allowAnonPost": false,
+        "ssoRequired": false,
+        "unapproveLinks": false,
+        "linkAffiliationEnabled": false,
+        "adsProductLinksThumbnailsEnabled": false,
+        "hasCustomAvatar": false,
+        "organicDiscoveryEnabled": false,
+        "allowMedia": true,
+        "adsProductDisplayEnabled": false,
+        "discoveryLocked": false,
+        "adsEnabled": false,
+        "adsPositionTopEnabled": false,
+        "adsProductStoriesEnabled": false,
+        "adultContent": false,
+        "allowAnonVotes": false,
+        "adsProductVideoEnabled": false,
+        "mustVerify": true,
+        "mustVerifyEmail": true,
+        "audienceSyncEnabled": false,
+        "mediaembedEnabled": true,
+        "adsPositionBottomEnabled": false,
+        "adsProductLinksEnabled": false,
+        "validateAllPosts": false,
+        "adsSettingsLocked": false,
+        "isVIP": false,
+        "adsPositionInthreadEnabled": false
+      },
+      "organizationId": 2969281,
+      "url": "http://kawaiianimeworld.disq.us",
+      "daysThreadAlive": 7,
+      "avatar": {
+        "small": {
+          "permalink": "https://disqus.com/api/forums/avatars/channel-kawaiianimeworld.jpg?size=32",
+          "cache": "//a.disquscdn.com/1495647272/images/noavatar32.png"
+        },
+        "large": {
+          "permalink": "https://disqus.com/api/forums/avatars/channel-kawaiianimeworld.jpg?size=92",
+          "cache": "//a.disquscdn.com/1495647272/images/noavatar92.png"
+        }
+      },
+      "signedUrl": "http://kawaiianimeworld.disq.us"
+    },
+    {
+      "founder": "203803192",
+      "twitterName": null,
+      "guidelines": null,
+      "favicon": {
+        "permalink": "https://disqus.com/api/forums/favicons/channel-confessions.jpg",
+        "cache": "https://c.disquscdn.com/uploads/forums/416/197/favicon.png"
+      },
+      "disableDisqusBranding": false,
+      "id": "channel-confessions",
+      "createdAt": "2016-04-09T19:57:09.971751",
+      "category": null,
+      "raw_guidelines": null,
+      "daysAlive": 7,
+      "installCompleted": true,
+      "pk": "4160197",
+      "channel": {
+        "bannerColor": "gray",
+        "slug": "confessions",
+        "dateAdded": "2016-04-09T23:57:10",
+        "name": "Confessions",
+        "banner": "https://c.disquscdn.com/uploads/channels/119605/banner.png?1488997278",
+        "bannerColorHex": "#7F919E",
+        "id": "119605",
+        "hidden": false,
+        "isAggregation": false,
+        "avatar": "https://c.disquscdn.com/uploads/channels/119605/avatar.png?1489077712",
+        "enableCuration": false,
+        "isCategory": false,
+        "adminOnly": false,
+        "options": {
+          "banner_color": "gray",
+          "banner_timestamp": 1488997278,
+          "description": "Make your confessions here.",
+          "avatar_timestamp": 1489077712,
+          "aboutUrlPath": "/home/channel/confessions/discussion/channel-confessions/channel_rules/"
+        },
+        "owner_id": "214774825"
+      },
+      "description": "<p>Anime, Manga, and the Otaku lifestyle. Please read the Community Guidelines for references on how to make discussion and for the home rules. I hope you'll enjoy your stay with us!</p>",
+      "raw_description": "Make your confessions here.",
+      "adsReviewStatus": 0,
+      "permissions": {},
+      "name": "Confessions",
+      "language": "en",
+      "settings": {
+        "adsDRNativeEnabled": false,
+        "disable3rdPartyTrackers": true,
+        "adsVideoEnabled": false,
+        "allowAnonPost": false,
+        "ssoRequired": false,
+        "unapproveLinks": false,
+        "linkAffiliationEnabled": false,
+        "adsProductLinksThumbnailsEnabled": false,
+        "hasCustomAvatar": false,
+        "organicDiscoveryEnabled": false,
+        "allowMedia": true,
+        "adsProductDisplayEnabled": false,
+        "discoveryLocked": false,
+        "adsEnabled": false,
+        "adsPositionTopEnabled": false,
+        "adsProductStoriesEnabled": false,
+        "adultContent": false,
+        "allowAnonVotes": false,
+        "adsProductVideoEnabled": false,
+        "mustVerify": true,
+        "mustVerifyEmail": true,
+        "audienceSyncEnabled": false,
+        "mediaembedEnabled": true,
+        "adsPositionBottomEnabled": false,
+        "adsProductLinksEnabled": false,
+        "validateAllPosts": false,
+        "adsSettingsLocked": false,
+        "isVIP": false,
+        "adsPositionInthreadEnabled": false
+      },
+      "organizationId": 3017367,
+      "url": "http://confessions.disq.us",
+      "daysThreadAlive": 7,
+      "avatar": {
+        "small": {
+          "permalink": "https://disqus.com/api/forums/avatars/channel-confessions.jpg?size=32",
+          "cache": "//a.disquscdn.com/1495647272/images/noavatar32.png"
+        },
+        "large": {
+          "permalink": "https://disqus.com/api/forums/avatars/channel-confessions.jpg?size=92",
+          "cache": "//a.disquscdn.com/1495647272/images/noavatar92.png"
+        }
+      },
+      "signedUrl": "http://confessions.disq.us"
+    },
+    {
+      "founder": "206791020",
+      "twitterName": null,
+      "guidelines": null,
+      "favicon": {
+        "permalink": "https://disqus.com/api/forums/favicons/channel-disqussinglikeapro.jpg",
+        "cache": "https://c.disquscdn.com/uploads/forums/422/3952/favicon.png"
+      },
+      "disableDisqusBranding": false,
+      "id": "channel-disqussinglikeapro",
+      "createdAt": "2016-05-03T18:45:48.701702",
+      "category": null,
+      "raw_guidelines": null,
+      "daysAlive": 7,
+      "installCompleted": true,
+      "pk": "4223952",
+      "channel": {
+        "bannerColor": "red",
+        "slug": "disqussinglikeapro",
+        "dateAdded": "2016-05-03T22:45:49",
+        "name": "Disqussing like a pro",
+        "banner": "https://c.disquscdn.com/uploads/channels/153478/banner.png?1483030426",
+        "bannerColorHex": "#F05F70",
+        "id": "153478",
+        "hidden": false,
+        "isAggregation": false,
+        "avatar": "https://c.disquscdn.com/uploads/channels/153478/avatar.png?1473173138",
+        "enableCuration": false,
+        "isCategory": false,
+        "adminOnly": false,
+        "options": {
+          "banner_color": "red",
+          "banner_timestamp": 1483030426,
+          "description": "To all the grammar nazi..the title -Disqussing like a pro- was intentionally written with a Q instead  of a C cause of this site name (Disqus)... <3",
+          "avatar_timestamp": 1473173138,
+          "aboutUrlPath": "/home/discussion/channel-disqussinglikeapro/the_official_rules_of_this_channel/"
+        },
+        "owner_id": "206057933"
+      },
+      "description": "",
+      "raw_description": "To all the grammar nazi..the title -Disqussing like a pro- was intentionally written with a Q instead  of a C cause of this site name (Disqus)... <3",
+      "adsReviewStatus": 0,
+      "permissions": {},
+      "name": "Disqussing like a pro",
+      "language": "en",
+      "settings": {
+        "adsDRNativeEnabled": false,
+        "disable3rdPartyTrackers": true,
+        "adsVideoEnabled": false,
+        "allowAnonPost": false,
+        "ssoRequired": false,
+        "unapproveLinks": false,
+        "linkAffiliationEnabled": false,
+        "adsProductLinksThumbnailsEnabled": false,
+        "hasCustomAvatar": false,
+        "organicDiscoveryEnabled": false,
+        "allowMedia": true,
+        "adsProductDisplayEnabled": false,
+        "discoveryLocked": false,
+        "adsEnabled": false,
+        "adsPositionTopEnabled": false,
+        "adsProductStoriesEnabled": false,
+        "adultContent": false,
+        "allowAnonVotes": false,
+        "adsProductVideoEnabled": false,
+        "mustVerify": true,
+        "mustVerifyEmail": true,
+        "audienceSyncEnabled": false,
+        "mediaembedEnabled": true,
+        "adsPositionBottomEnabled": false,
+        "adsProductLinksEnabled": false,
+        "validateAllPosts": false,
+        "adsSettingsLocked": false,
+        "isVIP": false,
+        "adsPositionInthreadEnabled": false
+      },
+      "organizationId": 3071310,
+      "url": "http://disqussinglikeapro.disq.us",
+      "daysThreadAlive": 7,
+      "avatar": {
+        "small": {
+          "permalink": "https://disqus.com/api/forums/avatars/channel-disqussinglikeapro.jpg?size=32",
+          "cache": "//a.disquscdn.com/1495647272/images/noavatar32.png"
+        },
+        "large": {
+          "permalink": "https://disqus.com/api/forums/avatars/channel-disqussinglikeapro.jpg?size=92",
+          "cache": "//a.disquscdn.com/1495647272/images/noavatar92.png"
+        }
+      },
+      "signedUrl": "http://disqussinglikeapro.disq.us"
+    },
+    {
+      "founder": "207986689",
+      "twitterName": null,
+      "guidelines": null,
+      "favicon": {
+        "permalink": "https://disqus.com/api/forums/favicons/channel-atomsworld.jpg",
+        "cache": "https://c.disquscdn.com/uploads/forums/424/3401/favicon.png"
+      },
+      "disableDisqusBranding": false,
+      "id": "channel-atomsworld",
+      "createdAt": "2016-05-14T01:57:37.403652",
+      "category": null,
+      "raw_guidelines": null,
+      "daysAlive": 7,
+      "installCompleted": true,
+      "pk": "4243401",
+      "channel": {
+        "bannerColor": "blue",
+        "slug": "atomsworld",
+        "dateAdded": "2016-05-14T05:57:37",
+        "name": "ATOM'S WORLD.",
+        "banner": "https://c.disquscdn.com/uploads/channels/160629/banner.png?1491739312",
+        "bannerColorHex": "#2E9FFF",
+        "id": "160629",
+        "hidden": false,
+        "isAggregation": false,
+        "avatar": "https://c.disquscdn.com/uploads/channels/160629/avatar.png?1492163487",
+        "enableCuration": false,
+        "isCategory": false,
+        "adminOnly": false,
+        "options": {
+          "aboutUrlPath": "/home/discussion/channel-atomsworld/new_rules_at_aw/",
+          "description": "Welcome to Atom's World! it's an open channel and feel free to create any discussions except pornography related topic.",
+          "banner_color": "blue",
+          "banner_timestamp": 1491739312,
+          "avatar_timestamp": 1492163487,
+          "titleLogo": {
+            "small": "//media.disquscdn.com/home/channels/atomsworld/atomsworld-logo.png",
+            "cache": "//media.disquscdn.com/home/channels/atomsworld/atomsworld-logo.png"
+          }
+        },
+        "owner_id": "177893682"
+      },
+      "description": "<p>Hiya~! All about anime and manga please do have fun. <br>Long live the bakas whoo!!!    (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</p>",
+      "raw_description": "Welcome to Atom's World! it's an open channel and feel free to create any discussions except pornography related topic.",
+      "adsReviewStatus": 0,
+      "permissions": {},
+      "name": "ATOM'S WORLD.",
+      "language": "en",
+      "settings": {
+        "adsDRNativeEnabled": false,
+        "disable3rdPartyTrackers": true,
+        "adsVideoEnabled": false,
+        "allowAnonPost": false,
+        "ssoRequired": false,
+        "unapproveLinks": false,
+        "linkAffiliationEnabled": false,
+        "adsProductLinksThumbnailsEnabled": false,
+        "hasCustomAvatar": false,
+        "organicDiscoveryEnabled": false,
+        "allowMedia": true,
+        "adsProductDisplayEnabled": false,
+        "discoveryLocked": false,
+        "adsEnabled": false,
+        "adsPositionTopEnabled": false,
+        "adsProductStoriesEnabled": false,
+        "adultContent": false,
+        "allowAnonVotes": false,
+        "adsProductVideoEnabled": false,
+        "mustVerify": true,
+        "mustVerifyEmail": true,
+        "audienceSyncEnabled": false,
+        "mediaembedEnabled": true,
+        "adsPositionBottomEnabled": false,
+        "adsProductLinksEnabled": false,
+        "validateAllPosts": false,
+        "adsSettingsLocked": false,
+        "isVIP": false,
+        "adsPositionInthreadEnabled": false
+      },
+      "organizationId": 3142579,
+      "url": "http://atomsworld.disq.us",
+      "daysThreadAlive": 7,
+      "avatar": {
+        "small": {
+          "permalink": "https://disqus.com/api/forums/avatars/channel-atomsworld.jpg?size=32",
+          "cache": "//a.disquscdn.com/1495647272/images/noavatar32.png"
+        },
+        "large": {
+          "permalink": "https://disqus.com/api/forums/avatars/channel-atomsworld.jpg?size=92",
+          "cache": "//a.disquscdn.com/1495647272/images/noavatar92.png"
+        }
+      },
+      "signedUrl": "http://atomsworld.disq.us"
+    },
+    {
+      "founder": "216287700",
+      "twitterName": null,
+      "guidelines": null,
+      "favicon": {
+        "permalink": "https://disqus.com/api/forums/favicons/channel-sweetloveandanimekisses.jpg",
+        "cache": "https://c.disquscdn.com/uploads/forums/444/5815/favicon.png"
+      },
+      "disableDisqusBranding": false,
+      "id": "channel-sweetloveandanimekisses",
+      "createdAt": "2016-07-25T13:06:36.093306",
+      "category": null,
+      "raw_guidelines": null,
+      "daysAlive": 7,
+      "installCompleted": true,
+      "pk": "4445815",
+      "channel": {
+        "bannerColor": "purple",
+        "slug": "sweetloveandanimekisses",
+        "dateAdded": "2016-07-25T17:06:36",
+        "name": "Sweet Love And Anime Kisses",
+        "banner": "https://c.disquscdn.com/uploads/channels/217317/banner.png?1475886152",
+        "bannerColorHex": "#B180C9",
+        "id": "217317",
+        "hidden": false,
+        "isAggregation": false,
+        "avatar": "https://c.disquscdn.com/uploads/channels/217317/avatar.png?1475769335",
+        "enableCuration": false,
+        "isCategory": false,
+        "adminOnly": false,
+        "options": {
+          "banner_color": "purple",
+          "banner_timestamp": 1475886152,
+          "description": "Enjoy Yourselves",
+          "avatar_timestamp": 1475769335
+        },
+        "owner_id": "212076608"
+      },
+      "description": "",
+      "raw_description": "Enjoy Yourselves",
+      "adsReviewStatus": 0,
+      "permissions": {},
+      "name": "Sweet Love And Anime Kisses",
+      "language": "en",
+      "settings": {
+        "adsDRNativeEnabled": false,
+        "disable3rdPartyTrackers": true,
+        "adsVideoEnabled": false,
+        "allowAnonPost": false,
+        "ssoRequired": false,
+        "unapproveLinks": false,
+        "linkAffiliationEnabled": false,
+        "adsProductLinksThumbnailsEnabled": false,
+        "hasCustomAvatar": false,
+        "organicDiscoveryEnabled": false,
+        "allowMedia": true,
+        "adsProductDisplayEnabled": false,
+        "discoveryLocked": false,
+        "adsEnabled": false,
+        "adsPositionTopEnabled": false,
+        "adsProductStoriesEnabled": false,
+        "adultContent": false,
+        "allowAnonVotes": false,
+        "adsProductVideoEnabled": false,
+        "mustVerify": true,
+        "mustVerifyEmail": true,
+        "audienceSyncEnabled": false,
+        "mediaembedEnabled": true,
+        "adsPositionBottomEnabled": false,
+        "adsProductLinksEnabled": false,
+        "validateAllPosts": false,
+        "adsSettingsLocked": false,
+        "isVIP": false,
+        "adsPositionInthreadEnabled": false
+      },
+      "organizationId": 3312556,
+      "url": "http://sweetloveandanimekisses.disq.us",
+      "daysThreadAlive": 7,
+      "avatar": {
+        "small": {
+          "permalink": "https://disqus.com/api/forums/avatars/channel-sweetloveandanimekisses.jpg?size=32",
+          "cache": "//a.disquscdn.com/1495647272/images/noavatar32.png"
+        },
+        "large": {
+          "permalink": "https://disqus.com/api/forums/avatars/channel-sweetloveandanimekisses.jpg?size=92",
+          "cache": "//a.disquscdn.com/1495647272/images/noavatar92.png"
+        }
+      },
+      "signedUrl": "http://sweetloveandanimekisses.disq.us"
+    },
+    {
+      "founder": "216472386",
+      "twitterName": null,
+      "guidelines": null,
+      "favicon": {
+        "permalink": "https://disqus.com/api/forums/favicons/channel-animeshit.jpg",
+        "cache": "https://c.disquscdn.com/uploads/forums/444/9490/favicon.png"
+      },
+      "disableDisqusBranding": false,
+      "id": "channel-animeshit",
+      "createdAt": "2016-07-27T01:47:13.222539",
+      "category": null,
+      "raw_guidelines": null,
+      "daysAlive": 7,
+      "installCompleted": true,
+      "pk": "4449490",
+      "channel": {
+        "bannerColor": "red",
+        "slug": "animeshit",
+        "dateAdded": "2016-07-27T05:47:13",
+        "name": "~Anime Shit~",
+        "banner": "https://c.disquscdn.com/uploads/channels/218137/banner.png?1472080296",
+        "bannerColorHex": "#F05F70",
+        "id": "218137",
+        "hidden": false,
+        "isAggregation": false,
+        "avatar": "https://c.disquscdn.com/uploads/channels/218137/avatar.png?1472080205",
+        "enableCuration": false,
+        "isCategory": false,
+        "adminOnly": false,
+        "options": {
+          "aboutUrlPath": "/home/channel/animeshit/discussion/channel-animeshit/rules/",
+          "description": "All things anime and manga!!!!!!!! (Created by:Nooger Booger~)",
+          "banner_color": "red",
+          "banner_timestamp": 1472080296,
+          "avatar_timestamp": 1472080205,
+          "titleLogo": {
+            "small": "//media.disquscdn.com/home/channels/animeshit/animeshit-logo.png",
+            "cache": "//media.disquscdn.com/home/channels/animeshit/animeshit-logo.png"
+          }
+        },
+        "owner_id": "216455474"
+      },
+      "description": "<p>The dark side of disqus, dedicated to blood, guts and ppl going nuts. Welcome to purgatory you sadistic bastards. Give us your worst~</p>",
+      "raw_description": "All things anime and manga!!!!!!!! (Created by:Nooger Booger~)",
+      "adsReviewStatus": 0,
+      "permissions": {},
+      "name": "~Anime Shit~",
+      "language": "en",
+      "settings": {
+        "adsDRNativeEnabled": false,
+        "disable3rdPartyTrackers": true,
+        "adsVideoEnabled": false,
+        "allowAnonPost": false,
+        "ssoRequired": false,
+        "unapproveLinks": false,
+        "linkAffiliationEnabled": false,
+        "adsProductLinksThumbnailsEnabled": false,
+        "hasCustomAvatar": false,
+        "organicDiscoveryEnabled": false,
+        "allowMedia": true,
+        "adsProductDisplayEnabled": false,
+        "discoveryLocked": false,
+        "adsEnabled": false,
+        "adsPositionTopEnabled": false,
+        "adsProductStoriesEnabled": false,
+        "adultContent": false,
+        "allowAnonVotes": false,
+        "adsProductVideoEnabled": false,
+        "mustVerify": true,
+        "mustVerifyEmail": true,
+        "audienceSyncEnabled": false,
+        "mediaembedEnabled": true,
+        "adsPositionBottomEnabled": false,
+        "adsProductLinksEnabled": false,
+        "validateAllPosts": false,
+        "adsSettingsLocked": false,
+        "isVIP": false,
+        "adsPositionInthreadEnabled": false
+      },
+      "organizationId": 3315476,
+      "url": "http://animeshit.disq.us",
+      "daysThreadAlive": 7,
+      "avatar": {
+        "small": {
+          "permalink": "https://disqus.com/api/forums/avatars/channel-animeshit.jpg?size=32",
+          "cache": "//a.disquscdn.com/1495647272/images/noavatar32.png"
+        },
+        "large": {
+          "permalink": "https://disqus.com/api/forums/avatars/channel-animeshit.jpg?size=92",
+          "cache": "//a.disquscdn.com/1495647272/images/noavatar92.png"
+        }
+      },
+      "signedUrl": "http://animeshit.disq.us"
+    },
+    {
+      "founder": "235838496",
+      "twitterName": null,
+      "guidelines": null,
+      "favicon": {
+        "permalink": "https://disqus.com/api/forums/favicons/channel-dontbullymeee.jpg",
+        "cache": "https://c.disquscdn.com/uploads/forums/477/6620/favicon.png"
+      },
+      "disableDisqusBranding": false,
+      "id": "channel-dontbullymeee",
+      "createdAt": "2016-12-21T06:01:48.438505",
+      "category": null,
+      "raw_guidelines": null,
+      "daysAlive": 7,
+      "installCompleted": true,
+      "pk": "4776620",
+      "channel": {
+        "bannerColor": "orange",
+        "slug": "dontbullymeee",
+        "dateAdded": "2016-12-21T11:01:48",
+        "name": "Don't bully me e.e",
+        "banner": "https://c.disquscdn.com/uploads/channels/339265/banner.png?1490901685",
+        "bannerColorHex": "#FF9B51",
+        "id": "339265",
+        "hidden": false,
+        "isAggregation": false,
+        "avatar": "https://c.disquscdn.com/uploads/channels/339265/avatar.png?1482674731",
+        "enableCuration": false,
+        "isCategory": false,
+        "adminOnly": false,
+        "options": {
+          "banner_color": "orange",
+          "banner_timestamp": 1490901685,
+          "description": "DBM is a sacred place meant to heal the wounds of mentally and physically injured victims. Along with it, it is also an open channel which welcomes all sorts of discussions.",
+          "avatar_timestamp": 1482674731,
+          "aboutUrlPath": "/home/discussion/channel-dontbullymeee/rules_and_guidelines/"
+        },
+        "owner_id": "177631426"
+      },
+      "description": "",
+      "raw_description": "DBM is a sacred place meant to heal the wounds of mentally and physically injured victims. Along with it, it is also an open channel which welcomes all sorts of discussions.",
+      "adsReviewStatus": 0,
+      "permissions": {},
+      "name": "Don't bully me e.e",
+      "language": "en",
+      "settings": {
+        "adsDRNativeEnabled": false,
+        "disable3rdPartyTrackers": true,
+        "adsVideoEnabled": false,
+        "allowAnonPost": false,
+        "ssoRequired": false,
+        "unapproveLinks": false,
+        "linkAffiliationEnabled": false,
+        "adsProductLinksThumbnailsEnabled": false,
+        "hasCustomAvatar": false,
+        "organicDiscoveryEnabled": false,
+        "allowMedia": true,
+        "adsProductDisplayEnabled": false,
+        "discoveryLocked": false,
+        "adsEnabled": false,
+        "adsPositionTopEnabled": false,
+        "adsProductStoriesEnabled": false,
+        "adultContent": false,
+        "allowAnonVotes": false,
+        "adsProductVideoEnabled": false,
+        "mustVerify": true,
+        "mustVerifyEmail": true,
+        "audienceSyncEnabled": false,
+        "mediaembedEnabled": true,
+        "adsPositionBottomEnabled": false,
+        "adsProductLinksEnabled": false,
+        "validateAllPosts": false,
+        "adsSettingsLocked": false,
+        "isVIP": false,
+        "adsPositionInthreadEnabled": false
+      },
+      "organizationId": 3581044,
+      "url": "http://dontbullymeee.disq.us",
+      "daysThreadAlive": 7,
+      "avatar": {
+        "small": {
+          "permalink": "https://disqus.com/api/forums/avatars/channel-dontbullymeee.jpg?size=32",
+          "cache": "//a.disquscdn.com/1495647272/images/noavatar32.png"
+        },
+        "large": {
+          "permalink": "https://disqus.com/api/forums/avatars/channel-dontbullymeee.jpg?size=92",
+          "cache": "//a.disquscdn.com/1495647272/images/noavatar92.png"
+        }
+      },
+      "signedUrl": "http://dontbullymeee.disq.us"
+    }
+  ]
+}

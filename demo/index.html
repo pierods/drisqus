@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="common.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+</head>
+
+<body>
+  <span style="font-family: 'Inconsolata', monospace;">Welcome to the Drisqus Demo. Pick an <a href="#" onclick="getInterestingForums();">interesting forum</a>,
+    some <a href="#" onclick="getTrends();">trending threads</a> or enter a forum id:
+    <form style="display: inline;" action="threadlist.html" method="get"><input type="text" name="forum"></input>
+    </form>
+    to get started
+  </span>
+  <div id="panel" style="border: 1px solid;position: relative; left: 30px;font-family: 'Inconsolata', monospace;background-color: #e6f2ff;"></div>
+  <script>
+    forumDiv = document.getElementById("panel")
+
+    function getInterestingForums() {
+      forumDiv.innerHTML = "    Getting forum list.."
+      var forumRequest = new XMLHttpRequest();
+      forumRequest.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          forumDiv.innerHTML = ""
+          var iForums = JSON.parse(forumRequest.responseText);
+          iForums.forEach(function(iForum) {
+            forumDiv.innerHTML = forumDiv.innerHTML + "<p>" + makeA(iForum.reason + " - " + iForum.forum.name, "threadlist.html?forum=" + iForum.forum.id) + "<br>"
+          })
+        }
+      }
+      forumRequest.open("GET", "http://localhost:30000/interestingforums", true);
+      forumRequest.send();
+    }
+
+    function getTrends() {
+      forumDiv.innerHTML = "    Getting trending threads.."
+      var trendRequest = new XMLHttpRequest();
+      trendRequest.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {
+            forumDiv.innerHTML = ""
+            var trends = JSON.parse(trendRequest.responseText);
+            trends.forEach(function(trend) {
+              forumDiv.innerHTML = forumDiv.innerHTML + "<p>" +
+                makeA(trend.thread.title + " - " + trend.posts + " posts - " + trend.postLikes + " postLikes on " + trend.thread.forum, "threadtools.html?thread=" + trend.thread.id + "&threadTitle=" + trend.thread.title) + "<br>"
+            })
+          } else {
+            forumDiv.innerHTML = trendRequest.responseText
+          }
+        }
+      }
+      trendRequest.open("GET", "http://localhost:30000/trends", true);
+      trendRequest.send();
+    }
+  </script>
+</body>
+
+</html>

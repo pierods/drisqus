@@ -1,0 +1,56 @@
+{
+  "code": 0,
+  "response": {
+    "dislikes": 0,
+    "numReports": 0,
+    "likes": 0,
+    "message": "<p>I wouldn't even say that head was 100% to blame. According to his sister-in-law, increasing alcoholism and pill use, mounting tensions in their marriage, personal crisis that his career was winding down, daily neck pain, fractured psychological condition at the death of his best friend. But yeah, not steroids.</p>",
+    "id": "3320987826",
+    "isDeleted": false,
+    "author": {
+      "username": "royalewithcrowne",
+      "about": "",
+      "name": "Royale with Crowne",
+      "disable3rdPartyTrackers": false,
+      "url": "",
+      "isAnonymous": false,
+      "profileUrl": "https://disqus.com/by/royalewithcrowne/",
+      "isPowerContributor": false,
+      "location": "",
+      "isPrivate": false,
+      "signedUrl": "",
+      "isPrimary": true,
+      "joinedAt": "2016-05-25T00:50:56",
+      "id": "209257634",
+      "avatar": {
+        "small": {
+          "permalink": "https://disqus.com/api/users/avatars/royalewithcrowne.jpg",
+          "cache": "https://c.disquscdn.com/uploads/users/20925/7634/avatar32.jpg?1473884102"
+        },
+        "isCustom": true,
+        "permalink": "https://disqus.com/api/users/avatars/royalewithcrowne.jpg",
+        "cache": "https://c.disquscdn.com/uploads/users/20925/7634/avatar92.jpg?1473884102",
+        "large": {
+          "permalink": "https://disqus.com/api/users/avatars/royalewithcrowne.jpg",
+          "cache": "https://c.disquscdn.com/uploads/users/20925/7634/avatar92.jpg?1473884102"
+        }
+      }
+    },
+    "media": [],
+    "isSpam": false,
+    "isDeletedByAuthor": false,
+    "createdAt": "2017-05-23T17:57:41",
+    "parent": 3320975377,
+    "isApproved": true,
+    "isFlagged": false,
+    "raw_message": "I wouldn't even say that head was 100% to blame. According to his sister-in-law, increasing alcoholism and pill use, mounting tensions in their marriage, personal crisis that his career was winding down, daily neck pain, fractured psychological condition at the death of his best friend. But yeah, not steroids.",
+    "isHighlighted": false,
+    "canVote": false,
+    "thread": "5843656825",
+    "forum": "wrestlinginc",
+    "points": 0,
+    "moderationLabels": [],
+    "isEdited": false,
+    "sb": false
+  }
+}
