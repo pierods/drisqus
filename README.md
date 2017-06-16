@@ -44,7 +44,7 @@ One can then proceed to make calls against Disqus' endpoints. Calls do not suppo
 Methods that support the "pages" parameter will retrieve pages of size 100 (or less when 100 is not supported by Disqus). If pages is set to -1, all pages are retrieved.
 
 ### Data drilling and statistics
-Drisqus makes it really is to drill down in Disqus' API and calculate statistics.
+Drisqus makes it really easy to drill down in Disqus' API and calculate statistics.
 
 As an example, let's pick the latest thread from a forum and check out which comment authors don't have any replies to their posts.
 
@@ -69,8 +69,11 @@ As an example, let's pick the latest thread from a forum and check out which com
         ...
     }
     threadID := threads[0].ID
-    posts := d.ThreadPostsQuick(ctx, threadID, -1)
-    postsByParent := make(map[string]*gisqus.Post)
+    posts, err := d.ThreadPostsQuick(ctx, threadID, -1)
+    if err != nil {
+        ...
+    }    
+	postsByParent := make(map[string]*gisqus.Post)
   
     for _, post := range posts {
         postsByParent[post.parent] = post    
