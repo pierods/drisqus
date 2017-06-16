@@ -22,7 +22,6 @@ then pass it to Drisqus:
 
 ```Go
     import  "context"
-    import  "net/url"
     import  "github.com/pierods/gisqus"
     import  "github.com/pierods/drisqus"
     ...
@@ -49,9 +48,7 @@ Drisqus makes it really easy to drill down in Disqus' API and calculate statisti
 As an example, let's pick the latest thread from a forum and check out which comment authors don't have any replies to their posts.
 
 ```Go
-    import "fmt"
     import  "context"
-    import  "net/url"
     import  "github.com/pierods/gisqus"
     import  "github.com/pierods/drisqus"
     ...
@@ -90,8 +87,8 @@ As an example, let's pick the latest thread from a forum and check out which com
     for _, post := range postsWithoutReplies {
         authorsWithoutRepliesMap[post.Author.ID] = true
     }
-    authorsWithoutReplies := []string
     
+    authorsWithoutReplies := []string    
     for authorID, _ := range authorsWithoutRepliesMap {
         authorsWithoutReplies = append(authorsWithoutReplies, authorID)
     }
