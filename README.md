@@ -38,7 +38,7 @@ One can then proceed to make calls against Disqus' endpoints. Calls do not suppo
     if err != nil {
         ...
     }
-    fmt.Println(forums[0].forum.Name)
+    fmt.Println(forums[0].Name)
 ```
 Methods that support the "pages" parameter will retrieve pages of size 100 (or less when 100 is not supported by Disqus). If pages is set to -1, all pages are retrieved.
 
@@ -73,7 +73,9 @@ As an example, let's pick the latest thread from a forum and check out which com
     
     postsByParent := make(map[string]*gisqus.Post)
     for _, post := range posts {
-        postsByParent[post.parent] = post    
+		if post.Parent != "0" {
+			postsByParent[post.parent] = post    	
+		}        
     }
     
     postsWithoutReplies := []*gisqus.Post
