@@ -4,8 +4,6 @@
 package drisqus
 
 import (
-	"fmt"
-	"os"
 	"testing"
 
 	"github.com/pierods/gisqus"
@@ -13,100 +11,27 @@ import (
 
 func mockUserURLs() {
 
-	var err error
-	usersMostActiveForumsJSON, err := readTestFile("usersmostactiveforums.json")
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	usersActivitiesJSON, err := readTestFile("userslistactivity.json")
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	usersListPostsJSON, err := readTestFile("userslistposts.json")
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	usersUserDetailsJSON, err := readTestFile("usersuserdetail.json")
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	usersInterestingUsersJSON, err := readTestFile("usersinterestingusers.json")
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	usersActiveForumsJSON, err := readTestFile("usersactiveforums.json")
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	usersFollowersJSON, err := readTestFile("usersfollowers.json")
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	usersFollowingJSON, err := readTestFile("usersfollowing.json")
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	usersForumFollowingJSON, err := readTestFile("usersfollowingforums.json")
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
+	usersMostActiveForumsJSON := readTestFile("usersmostactiveforums.json")
+	usersActivitiesJSON := readTestFile("userslistactivity.json")
+	usersListPostsJSON := readTestFile("userslistposts.json")
+	usersUserDetailsJSON := readTestFile("usersuserdetail.json")
+	usersInterestingUsersJSON := readTestFile("usersinterestingusers.json")
+	usersActiveForumsJSON := readTestFile("usersactiveforums.json")
+	usersFollowersJSON := readTestFile("usersfollowers.json")
+	usersFollowingJSON := readTestFile("usersfollowing.json")
+	usersForumFollowingJSON := readTestFile("usersfollowingforums.json")
 
 	usersUrls := testGisqus.ReadUsersURLs()
 
-	usersUrls.PostListURL, testErr = mockServer.SwitchHostAndScheme(usersUrls.PostListURL, usersListPostsJSON)
-	if testErr != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	usersUrls.MostActiveForumsURL, testErr = mockServer.SwitchHostAndScheme(usersUrls.MostActiveForumsURL, usersMostActiveForumsJSON)
-	if testErr != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	usersUrls.ActivityURL, testErr = mockServer.SwitchHostAndScheme(usersUrls.ActivityURL, usersActivitiesJSON)
-	if testErr != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	usersUrls.DetailURL, testErr = mockServer.SwitchHostAndScheme(usersUrls.DetailURL, usersUserDetailsJSON)
-	if testErr != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	usersUrls.InterestingIUsersURL, testErr = mockServer.SwitchHostAndScheme(usersUrls.InterestingIUsersURL, usersInterestingUsersJSON)
-	if testErr != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	usersUrls.ActiveForumsURL, testErr = mockServer.SwitchHostAndScheme(usersUrls.ActiveForumsURL, usersActiveForumsJSON)
-	if testErr != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	usersUrls.FollowersURL, testErr = mockServer.SwitchHostAndScheme(usersUrls.FollowersURL, usersFollowersJSON)
-	if testErr != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	usersUrls.FollowingURL, testErr = mockServer.SwitchHostAndScheme(usersUrls.FollowingURL, usersFollowingJSON)
-	if testErr != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	usersUrls.FollowingForumsURL, testErr = mockServer.SwitchHostAndScheme(usersUrls.FollowingForumsURL, usersForumFollowingJSON)
-	if testErr != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
+	usersUrls.PostListURL = switchHS(usersUrls.PostListURL, usersListPostsJSON)
+	usersUrls.MostActiveForumsURL = switchHS(usersUrls.MostActiveForumsURL, usersMostActiveForumsJSON)
+	usersUrls.ActivityURL = switchHS(usersUrls.ActivityURL, usersActivitiesJSON)
+	usersUrls.DetailURL = switchHS(usersUrls.DetailURL, usersUserDetailsJSON)
+	usersUrls.InterestingIUsersURL = switchHS(usersUrls.InterestingIUsersURL, usersInterestingUsersJSON)
+	usersUrls.ActiveForumsURL = switchHS(usersUrls.ActiveForumsURL, usersActiveForumsJSON)
+	usersUrls.FollowersURL = switchHS(usersUrls.FollowersURL, usersFollowersJSON)
+	usersUrls.FollowingURL = switchHS(usersUrls.FollowingURL, usersFollowingJSON)
+	usersUrls.FollowingForumsURL = switchHS(usersUrls.FollowingForumsURL, usersForumFollowingJSON)
 
 	testGisqus.SetUsersURLs(usersUrls)
 }

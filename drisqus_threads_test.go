@@ -4,8 +4,6 @@
 package drisqus
 
 import (
-	"fmt"
-	"os"
 	"testing"
 
 	"github.com/pierods/gisqus"
@@ -13,91 +11,26 @@ import (
 
 func mockThreadURLS() {
 
-	var err error
-
-	threadPostsJSON, err := readTestFile("threadsthreadposts.json")
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	threadListHotJSON, err := readTestFile("threadshotlist.json")
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	threadListPopularJSON, err := readTestFile("threadspopular.json")
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	threadListJSON, err := readTestFile("threadsthreadlist.json")
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	threadListTrendingJSON, err := readTestFile("threadstrending.json")
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	threadSetJSON, err := readTestFile("threadsset.json")
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	threadDetailsJSON, err := readTestFile("threadsthreaddetails.json")
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	threadUsersVotedJSON, err := readTestFile("threadsusersvoted.json")
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
+	threadPostsJSON := readTestFile("threadsthreadposts.json")
+	threadListHotJSON := readTestFile("threadshotlist.json")
+	threadListPopularJSON := readTestFile("threadspopular.json")
+	threadListJSON := readTestFile("threadsthreadlist.json")
+	threadListTrendingJSON := readTestFile("threadstrending.json")
+	threadSetJSON := readTestFile("threadsset.json")
+	threadDetailsJSON := readTestFile("threadsthreaddetails.json")
+	threadUsersVotedJSON := readTestFile("threadsusersvoted.json")
 
 	urls := testGisqus.ReadThreadsURLs()
 
-	urls.ThreadPostsURL, err = mockServer.SwitchHostAndScheme(urls.ThreadPostsURL, threadPostsJSON)
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	urls.ThreadHotURL, err = mockServer.SwitchHostAndScheme(urls.ThreadHotURL, threadListHotJSON)
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	urls.ThreadPopularURL, err = mockServer.SwitchHostAndScheme(urls.ThreadPopularURL, threadListPopularJSON)
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	urls.ThreadListURL, err = mockServer.SwitchHostAndScheme(urls.ThreadListURL, threadListJSON)
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	urls.ThreadTrendingURL, err = mockServer.SwitchHostAndScheme(urls.ThreadTrendingURL, threadListTrendingJSON)
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	urls.ThreadDetailURL, err = mockServer.SwitchHostAndScheme(urls.ThreadDetailURL, threadDetailsJSON)
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	urls.ThreadSetURL, err = mockServer.SwitchHostAndScheme(urls.ThreadSetURL, threadSetJSON)
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	urls.ThreadUsersVotedURL, err = mockServer.SwitchHostAndScheme(urls.ThreadUsersVotedURL, threadUsersVotedJSON)
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
+	urls.ThreadPostsURL = switchHS(urls.ThreadPostsURL, threadPostsJSON)
+	urls.ThreadHotURL = switchHS(urls.ThreadHotURL, threadListHotJSON)
+	urls.ThreadPopularURL = switchHS(urls.ThreadPopularURL, threadListPopularJSON)
+	urls.ThreadListURL = switchHS(urls.ThreadListURL, threadListJSON)
+	urls.ThreadTrendingURL = switchHS(urls.ThreadTrendingURL, threadListTrendingJSON)
+	urls.ThreadDetailURL = switchHS(urls.ThreadDetailURL, threadDetailsJSON)
+	urls.ThreadSetURL = switchHS(urls.ThreadSetURL, threadSetJSON)
+	urls.ThreadUsersVotedURL = switchHS(urls.ThreadUsersVotedURL, threadUsersVotedJSON)
+
 	testGisqus.SetThreadsURLs(urls)
 }
 

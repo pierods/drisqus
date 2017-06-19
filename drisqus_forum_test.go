@@ -8,8 +8,6 @@ t.Skip() the tests based on the flag.
 package drisqus
 
 import (
-	"fmt"
-	"os"
 	"testing"
 
 	"github.com/pierods/gisqus"
@@ -17,89 +15,26 @@ import (
 
 func mockForumURLS() {
 
-	var err error
+	forumInterestingForumsJSON := readTestFile("forumsinterestingforums.json")
+	forumDetailsJSON := readTestFile("forumsforumdetails.json")
+	forumListCategoriesJSON := readTestFile("forumslistcategories.json")
+	forumMostActiveUsersJSON := readTestFile("forumslistmostactive.json")
+	forumListUsersJSON := readTestFile("forumslistforumusers.json")
+	forumThreadListJSON := readTestFile("forumsforumlistthreads.json")
+	forumMostLikedUsersJSON := readTestFile("forumsmostlikedusers.json")
+	forumFollowersJSON := readTestFile("forumslistfollowers.json")
 
-	forumInterestingForumsJSON, err := readTestFile("forumsinterestingforums.json")
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	forumDetailsJSON, err := readTestFile("forumsforumdetails.json")
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	forumListCategoriesJSON, err := readTestFile("forumslistcategories.json")
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	forumMostActiveUsersJSON, err := readTestFile("forumslistmostactive.json")
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	forumListUsersJSON, err := readTestFile("forumslistforumusers.json")
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	forumThreadListJSON, err := readTestFile("forumsforumlistthreads.json")
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	forumMostLikedUsersJSON, err := readTestFile("forumsmostlikedusers.json")
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	forumFollowersJSON, err := readTestFile("forumslistfollowers.json")
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
 	urls := testGisqus.ReadForumsURLs()
-	urls.DetailsURL, err = mockServer.SwitchHostAndScheme(urls.DetailsURL, forumDetailsJSON)
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	urls.InterestingForumsURL, err = mockServer.SwitchHostAndScheme(urls.InterestingForumsURL, forumInterestingForumsJSON)
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	urls.CategoriesURL, err = mockServer.SwitchHostAndScheme(urls.CategoriesURL, forumListCategoriesJSON)
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	urls.MostActiveUsersURL, err = mockServer.SwitchHostAndScheme(urls.MostActiveUsersURL, forumMostActiveUsersJSON)
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	urls.ListUsersURL, err = mockServer.SwitchHostAndScheme(urls.ListUsersURL, forumListUsersJSON)
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	urls.ListThreadsURL, err = mockServer.SwitchHostAndScheme(urls.ListThreadsURL, forumThreadListJSON)
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	urls.MostLikedUsersURL, err = mockServer.SwitchHostAndScheme(urls.MostLikedUsersURL, forumMostLikedUsersJSON)
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	urls.ListFollowersURL, err = mockServer.SwitchHostAndScheme(urls.ListFollowersURL, forumFollowersJSON)
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
+
+	urls.DetailsURL = switchHS(urls.DetailsURL, forumDetailsJSON)
+	urls.InterestingForumsURL = switchHS(urls.InterestingForumsURL, forumInterestingForumsJSON)
+	urls.CategoriesURL = switchHS(urls.CategoriesURL, forumListCategoriesJSON)
+	urls.MostActiveUsersURL = switchHS(urls.MostActiveUsersURL, forumMostActiveUsersJSON)
+	urls.ListUsersURL = switchHS(urls.ListUsersURL, forumListUsersJSON)
+	urls.ListThreadsURL = switchHS(urls.ListThreadsURL, forumThreadListJSON)
+	urls.MostLikedUsersURL = switchHS(urls.MostLikedUsersURL, forumMostLikedUsersJSON)
+	urls.ListFollowersURL = switchHS(urls.ListFollowersURL, forumFollowersJSON)
+
 	testGisqus.SetForumsURLs(urls)
 }
 

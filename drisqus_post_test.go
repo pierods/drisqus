@@ -4,8 +4,6 @@
 package drisqus
 
 import (
-	"fmt"
-	"os"
 	"testing"
 
 	"github.com/pierods/gisqus"
@@ -13,38 +11,15 @@ import (
 
 func mockPostURLS() {
 
-	var err error
-	postPopularJSON, err := readTestFile("postspostpopular.json")
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	postDetailsJSON, err := readTestFile("postspostdetails.json")
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
-	postListJSON, err := readTestFile("postspostlist.json")
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(-1)
-	}
+	postPopularJSON := readTestFile("postspostpopular.json")
+	postDetailsJSON := readTestFile("postspostdetails.json")
+	postListJSON := readTestFile("postspostlist.json")
 
 	postsURLs := testGisqus.ReadPostURLs()
 
-	postsURLs.PostDetailsURL, testErr = mockServer.SwitchHostAndScheme(postsURLs.PostDetailsURL, postDetailsJSON)
-	if testErr != nil {
-		os.Exit(-1)
-	}
-
-	postsURLs.PostListURL, testErr = mockServer.SwitchHostAndScheme(postsURLs.PostListURL, postListJSON)
-	if testErr != nil {
-		os.Exit(-1)
-	}
-	postsURLs.PostPopularURL, testErr = mockServer.SwitchHostAndScheme(postsURLs.PostPopularURL, postPopularJSON)
-	if testErr != nil {
-		os.Exit(-1)
-	}
+	postsURLs.PostDetailsURL = switchHS(postsURLs.PostDetailsURL, postDetailsJSON)
+	postsURLs.PostListURL = switchHS(postsURLs.PostListURL, postListJSON)
+	postsURLs.PostPopularURL = switchHS(postsURLs.PostPopularURL, postPopularJSON)
 
 	testGisqus.SetPostsURLs(postsURLs)
 }

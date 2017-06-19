@@ -32,20 +32,31 @@ func init() {
 	testDataDir = goPath + "/src/github.com/pierods/drisqus/testdata/"
 }
 
-func readTestFile(fileName string) (string, error) {
+func switchHS(URL, JSON string) string {
+	result, err := mockServer.SwitchHostAndScheme(URL, JSON)
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(-1)
+	}
+	return result
+}
+
+func readTestFile(fileName string) string {
 
 	f, err := os.Open(testDataDir + fileName)
 	defer f.Close()
 
 	if err != nil {
-		return "", err
+		fmt.Println(err)
+		os.Exit(-1)
 	}
 	bytes, err := ioutil.ReadAll(f)
 	if err != nil {
-		return "", err
+		fmt.Println(err)
+		os.Exit(-1)
 	}
 
-	return string(bytes), nil
+	return string(bytes)
 }
 
 func readKeyFile() (string, error) {
