@@ -33,7 +33,7 @@ ThreadPostsQuick wraps ThreadPosts. It includes frequently used parameters, and 
 When pages is -1, all pages are retrieved.
 */
 func (d *Drisqus) ThreadPostsQuick(ctx context.Context, threadID string, pages int) ([]*gisqus.Post, error) {
-	return d.ThreadPosts(ctx, threadID, pages, []string{}, []string{}, "", time.Time{}, "")
+	return d.ThreadPosts(ctx, threadID, pages, []gisqus.Filter{}, []gisqus.Include{}, "", time.Time{}, "")
 }
 
 /*
@@ -41,14 +41,14 @@ ThreadPosts wraps https://disqus.com/api/docs/threads/listPosts/ (https://disqus
 It does not support the "related" argument (related fields can be gotten with calls to their respective APIS)
 When pages is -1, all pages are retrieved.
 */
-func (d *Drisqus) ThreadPosts(ctx context.Context, threadID string, pages int, filters, includes []string, forumID string, since time.Time, order string) ([]*gisqus.Post, error) {
+func (d *Drisqus) ThreadPosts(ctx context.Context, threadID string, pages int, filters []gisqus.Filter, includes []gisqus.Include, forumID string, since time.Time, order gisqus.Order) ([]*gisqus.Post, error) {
 
 	values := url.Values{}
 	for _, filter := range filters {
-		values.Add("filter", filter)
+		values.Add("filter", string(filter))
 	}
 	for _, include := range includes {
-		values.Add("include", include)
+		values.Add("include", string(include))
 	}
 	if forumID != "" {
 		values.Set("forum", forumID)
@@ -57,7 +57,7 @@ func (d *Drisqus) ThreadPosts(ctx context.Context, threadID string, pages int, f
 		values.Set("since", gisqus.ToDisqusTime(since))
 	}
 	if order != "" {
-		values.Set("order", order)
+		values.Set("order", string(order))
 	}
 	values.Set("limit", "100")
 
@@ -87,7 +87,7 @@ ThreadListQuick wraps ThreadList. It includes frequently used parameters, and se
 When pages is -1, all pages are retrieved.
 */
 func (d *Drisqus) ThreadListQuick(ctx context.Context, forumID string, pages int) ([]*gisqus.Thread, error) {
-	return d.ThreadList(ctx, []string{}, []string{forumID}, []string{}, []string{}, []string{}, pages, time.Time{}, "")
+	return d.ThreadList(ctx, []string{}, []string{forumID}, []string{}, []string{}, []gisqus.Include{}, pages, time.Time{}, "")
 }
 
 /*
@@ -95,7 +95,7 @@ ThreadList wraps https://disqus.com/api/docs/threads/list/ (https://disqus.com/a
 It does not support the "related" argument (related fields can be gotten with calls to their respective APIS)
 When pages is -1, all pages are retrieved.
 */
-func (d *Drisqus) ThreadList(ctx context.Context, categoryIDs, forumIDs, threadIDs, authorIDs, includes []string, pages int, since time.Time, order string) ([]*gisqus.Thread, error) {
+func (d *Drisqus) ThreadList(ctx context.Context, categoryIDs, forumIDs, threadIDs, authorIDs []string, includes []gisqus.Include, pages int, since time.Time, order gisqus.Order) ([]*gisqus.Thread, error) {
 
 	values := url.Values{}
 	for _, categoryID := range categoryIDs {
@@ -111,13 +111,13 @@ func (d *Drisqus) ThreadList(ctx context.Context, categoryIDs, forumIDs, threadI
 		values.Add("author", authorID)
 	}
 	for _, include := range includes {
-		values.Add("include", include)
+		values.Add("include", string(include))
 	}
 	if since != (time.Time{}) {
 		values.Set("since", gisqus.ToDisqusTime(since))
 	}
 	if order != "" {
-		values.Set("order", order)
+		values.Set("order", string(order))
 	}
 	values.Set("limit", "100")
 	for _, forumID := range forumIDs {
@@ -147,14 +147,14 @@ func (d *Drisqus) ThreadList(ctx context.Context, categoryIDs, forumIDs, threadI
 ThreadHotQuick wraps ThreadHot. It includes frequently used parameters, and sets the rest to their zero values
 */
 func (d *Drisqus) ThreadHotQuick(ctx context.Context) ([]*gisqus.Thread, error) {
-	return d.ThreadHot(ctx, []string{}, []string{}, []string{}, []string{})
+	return d.ThreadHot(ctx, []string{}, []string{}, []string{}, []gisqus.Include{})
 }
 
 /*
 ThreadHot wraps https://disqus.com/api/docs/threads/listHot/ (https://disqus.com/api/3.0/threads/listHot.json)
 It does not support the "related" argument (related fields can be gotten with calls to their respective APIS)
 */
-func (d *Drisqus) ThreadHot(ctx context.Context, categoryIDs, forumIDs, authorIDs, includes []string) ([]*gisqus.Thread, error) {
+func (d *Drisqus) ThreadHot(ctx context.Context, categoryIDs, forumIDs, authorIDs []string, includes []gisqus.Include) ([]*gisqus.Thread, error) {
 
 	values := url.Values{}
 	values.Set("limit", "100")
@@ -163,6 +163,9 @@ func (d *Drisqus) ThreadHot(ctx context.Context, categoryIDs, forumIDs, authorID
 	}
 	for _, author := range authorIDs {
 		values.Add("author", author)
+	}
+	for _, include := range includes {
+		values.Add("include", string(include))
 	}
 
 	threadResponse, err := d.gisqus.ThreadHot(ctx, values)
@@ -188,7 +191,7 @@ func (d *Drisqus) ThreadPopularQuick(ctx context.Context) ([]*gisqus.Thread, err
 ThreadPopular wraps https://disqus.com/api/docs/threads/listPopular/ (https://disqus.com/api/3.0/threads/listPopular.json)
 It does not support the "related" argument (related fields can be gotten with calls to their respective APIS)
 */
-func (d *Drisqus) ThreadPopular(ctx context.Context, categoryID, forumID, interval string, withTopPost bool) ([]*gisqus.Thread, error) {
+func (d *Drisqus) ThreadPopular(ctx context.Context, categoryID, forumID string, interval gisqus.Interval, withTopPost bool) ([]*gisqus.Thread, error) {
 
 	values := url.Values{}
 	values.Set("limit", "100")
@@ -199,7 +202,7 @@ func (d *Drisqus) ThreadPopular(ctx context.Context, categoryID, forumID, interv
 		values.Add("category", categoryID)
 	}
 	if interval != "" {
-		values.Set("interval", interval)
+		values.Set("interval", string(interval))
 	}
 	if withTopPost {
 		values.Set("with_top_post", strconv.FormatBool(withTopPost))

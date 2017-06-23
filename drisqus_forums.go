@@ -18,10 +18,10 @@ import (
 ForumMostActiveUsers wraps https://disqus.com/api/docs/forums/listMostActiveUsers/ (https://disqus.com/api/3.0/forums/listMostActiveUsers.json)
 When pages is -1, all pages are retrieved.
 */
-func (d *Drisqus) ForumMostActiveUsers(ctx context.Context, forumID string, pages int, order string) ([]*gisqus.User, error) {
+func (d *Drisqus) ForumMostActiveUsers(ctx context.Context, forumID string, pages int, order gisqus.Order) ([]*gisqus.User, error) {
 	values := url.Values{}
 	if order != "" {
-		values.Set("order", order)
+		values.Set("order", string(order))
 	}
 	values.Set("limit", "100")
 	var users []*gisqus.User
@@ -103,11 +103,11 @@ func (d *Drisqus) ForumInteresting(ctx context.Context, pages int) ([]Interestin
 ForumCategories wraps https://disqus.com/api/docs/forums/listCategories/ (https://disqus.com/api/3.0/forums/listCategories.json)
 When pages is -1, all pages are retrieved.
 */
-func (d *Drisqus) ForumCategories(ctx context.Context, forumID string, pages int, order string) ([]*gisqus.Category, error) {
+func (d *Drisqus) ForumCategories(ctx context.Context, forumID string, pages int, order gisqus.Order) ([]*gisqus.Category, error) {
 
 	values := url.Values{}
 	if order != "" {
-		values.Set("order", order)
+		values.Set("order", string(order))
 	}
 	values.Set("limit", "100")
 	var categories []*gisqus.Category
@@ -149,11 +149,11 @@ func (d *Drisqus) ForumDetails(ctx context.Context, forumID string) (*gisqus.For
 ForumFollowers wraps https://disqus.com/api/docs/forums/listFollowers/ (https://disqus.com/api/3.0/forums/listFollowers.json)
 When pages is -1, all pages are retrieved.
 */
-func (d *Drisqus) ForumFollowers(ctx context.Context, forumID string, pages int, order string) ([]*gisqus.User, error) {
+func (d *Drisqus) ForumFollowers(ctx context.Context, forumID string, pages int, order gisqus.Order) ([]*gisqus.User, error) {
 
 	values := url.Values{}
 	if order != "" {
-		values.Set("order", order)
+		values.Set("order", string(order))
 	}
 	values.Set("limit", "100")
 	var users []*gisqus.User
@@ -181,11 +181,11 @@ func (d *Drisqus) ForumFollowers(ctx context.Context, forumID string, pages int,
 ForumUsers wraps https://disqus.com/api/3.0/forums/listUsers.json (https://disqus.com/api/docs/forums/listUsers/)
 When pages is -1, all pages are retrieved.
 */
-func (d *Drisqus) ForumUsers(ctx context.Context, forumID string, pages int, order string) ([]*gisqus.User, error) {
+func (d *Drisqus) ForumUsers(ctx context.Context, forumID string, pages int, order gisqus.Order) ([]*gisqus.User, error) {
 
 	values := url.Values{}
 	if order != "" {
-		values.Set("order", order)
+		values.Set("order", string(order))
 	}
 	values.Set("limit", "100")
 	var users []*gisqus.User
@@ -214,27 +214,27 @@ ForumThreadsQuick wraps ForumThreads. It includes frequently used parameters, an
 When pages is -1, all pages are retrieved.
 */
 func (d *Drisqus) ForumThreadsQuick(ctx context.Context, forumID string, pages int) ([]*gisqus.Thread, error) {
-	return d.ForumThreads(ctx, forumID, []string{}, []string{}, pages, time.Time{}, "")
+	return d.ForumThreads(ctx, forumID, []string{}, []gisqus.Include{}, pages, time.Time{}, "")
 }
 
 /*
 ForumThreads wraps https://disqus.com/api/docs/forums/listThreads/ (https://disqus.com/api/3.0/forums/listThreads.json)
 When pages is -1, all pages are retrieved.
 */
-func (d *Drisqus) ForumThreads(ctx context.Context, forumID string, threadIDs, includes []string, pages int, since time.Time, order string) ([]*gisqus.Thread, error) {
+func (d *Drisqus) ForumThreads(ctx context.Context, forumID string, threadIDs []string, includes []gisqus.Include, pages int, since time.Time, order gisqus.Order) ([]*gisqus.Thread, error) {
 
 	values := url.Values{}
 	for _, threadID := range threadIDs {
 		values.Add("thread", threadID)
 	}
 	for _, include := range includes {
-		values.Add("include", include)
+		values.Add("include", string(include))
 	}
 	if since != (time.Time{}) {
 		values.Set("since", gisqus.ToDisqusTime(since))
 	}
 	if order != "" {
-		values.Set("order", order)
+		values.Set("order", string(order))
 	}
 	values.Set("limit", "100")
 	var threads []*gisqus.Thread
@@ -263,11 +263,11 @@ ForumMostLikedUsers wraps https://disqus.com/api/docs/forums/listMostLikedUsers/
 Disqus does not return the # of likes with this call.
 When pages is -1, all pages are retrieved.
 */
-func (d *Drisqus) ForumMostLikedUsers(ctx context.Context, forumID string, pages int, order string) ([]*gisqus.User, error) {
+func (d *Drisqus) ForumMostLikedUsers(ctx context.Context, forumID string, pages int, order gisqus.Order) ([]*gisqus.User, error) {
 
 	values := url.Values{}
 	if order != "" {
-		values.Set("order", order)
+		values.Set("order", string(order))
 	}
 	values.Set("limit", "100")
 	var users []*gisqus.User

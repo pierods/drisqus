@@ -77,7 +77,7 @@ func (d *Drisqus) PostListQuick(ctx context.Context, threadID string, pages int)
 PostList wraps https://disqus.com/api/docs/posts/list/ (https://disqus.com/api/3.0/posts/list.json)
 When pages is -1, all pages are retrieved.
 */
-func (d *Drisqus) PostList(ctx context.Context, pages int, categoryIDs, threadIDs, forumIDs []string, start, end time.Time, sortType, order string) ([]*gisqus.Post, error) {
+func (d *Drisqus) PostList(ctx context.Context, pages int, categoryIDs, threadIDs, forumIDs []string, start, end time.Time, sortType gisqus.Sort, order gisqus.Order) ([]*gisqus.Post, error) {
 
 	values := url.Values{}
 	for _, categoryID := range categoryIDs {
@@ -96,10 +96,10 @@ func (d *Drisqus) PostList(ctx context.Context, pages int, categoryIDs, threadID
 		values.Set("end", gisqus.ToDisqusTime(end))
 	}
 	if sortType != "" {
-		values.Set("sortType", sortType)
+		values.Set("sortType", string(sortType))
 	}
 	if order != "" {
-		values.Set("order", order)
+		values.Set("order", string(order))
 	}
 	values.Set("limit", "100")
 	gisqusResponse, err := d.gisqus.PostList(ctx, values)
@@ -127,14 +127,14 @@ PostPopularQuick wraps PostPopular. It includes frequently used parameters, and 
 When pages is -1, all pages are retrieved.
 */
 func (d *Drisqus) PostPopularQuick(ctx context.Context, threadID string, pages int) ([]*gisqus.Post, error) {
-	return d.PostPopular(ctx, pages, []string{}, []string{threadID}, []string{}, "", "", "", "")
+	return d.PostPopular(ctx, pages, []string{}, []string{threadID}, []gisqus.Include{}, "", "", "", "")
 }
 
 /*
 PostPopular wraps https://disqus.com/api/docs/posts/listPopular/ (https://disqus.com/api/3.0/posts/listPopular.json)
 When pages is -1, all pages are retrieved.
 */
-func (d *Drisqus) PostPopular(ctx context.Context, pages int, forumIDs, threadIDs, includes []string, categoryID, interval, organizationID, order string) ([]*gisqus.Post, error) {
+func (d *Drisqus) PostPopular(ctx context.Context, pages int, forumIDs, threadIDs []string, includes []gisqus.Include, categoryID string, interval gisqus.Interval, organizationID string, order gisqus.Order) ([]*gisqus.Post, error) {
 
 	values := url.Values{}
 	for _, threadID := range threadIDs {
@@ -144,19 +144,19 @@ func (d *Drisqus) PostPopular(ctx context.Context, pages int, forumIDs, threadID
 		values.Add("forum", forumID)
 	}
 	for _, include := range includes {
-		values.Add("include", include)
+		values.Add("include", string(include))
 	}
 	if categoryID != "" {
 		values.Set("category", categoryID)
 	}
 	if interval != "" {
-		values.Set("interval", interval)
+		values.Set("interval", string(interval))
 	}
 	if organizationID != "" {
 		values.Set("organization", organizationID)
 	}
 	if order != "" {
-		values.Set("order", order)
+		values.Set("order", string(order))
 	}
 	values.Set("limit", "100")
 	gisqusResponse, err := d.gisqus.PostPopular(ctx, values)

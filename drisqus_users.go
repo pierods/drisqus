@@ -21,14 +21,14 @@ UserActivitiesQuick wraps UserActivities. It includes frequently used parameters
 When pages is -1, all pages are retrieved.
 */
 func (d *Drisqus) UserActivitiesQuick(ctx context.Context, userID string, pages int) (*UserActivities, error) {
-	return d.UserActivities(ctx, userID, pages, time.Time{}, []string{})
+	return d.UserActivities(ctx, userID, pages, time.Time{}, []gisqus.Include{})
 }
 
 /*
 UserActivities wraps https://disqus.com/api/docs/users/listActivity/ (https://disqus.com/api/3.0/users/listActivity.json)
 When pages is -1, all pages are retrieved.
 */
-func (d *Drisqus) UserActivities(ctx context.Context, userID string, pages int, since time.Time, includes []string) (*UserActivities, error) {
+func (d *Drisqus) UserActivities(ctx context.Context, userID string, pages int, since time.Time, includes []gisqus.Include) (*UserActivities, error) {
 
 	values := url.Values{}
 
@@ -36,7 +36,7 @@ func (d *Drisqus) UserActivities(ctx context.Context, userID string, pages int, 
 		values.Set("since", gisqus.ToDisqusTime(since))
 	}
 	for _, include := range includes {
-		values.Add("include", include)
+		values.Add("include", string(include))
 	}
 	values.Set("limit", "100")
 	var activities UserActivities
@@ -79,7 +79,7 @@ UserPostsQuick wraps UserPosts. It includes frequently used parameters, and sets
 When pages is -1, all pages are retrieved.
 */
 func (d *Drisqus) UserPostsQuick(ctx context.Context, userID string, pages int) ([]*gisqus.Post, error) {
-	return d.UserPosts(ctx, userID, []string{}, pages, time.Time{}, "")
+	return d.UserPosts(ctx, userID, []gisqus.Include{}, pages, time.Time{}, "")
 }
 
 /*
@@ -87,17 +87,17 @@ UserPosts wraps https://disqus.com/api/docs/users/listPosts/ (https://disqus.com
 It does not support the "related" argument (related fields can be gotten with calls to their respective APIS)
 When pages is -1, all pages are retrieved.
 */
-func (d *Drisqus) UserPosts(ctx context.Context, userID string, includes []string, pages int, since time.Time, order string) ([]*gisqus.Post, error) {
+func (d *Drisqus) UserPosts(ctx context.Context, userID string, includes []gisqus.Include, pages int, since time.Time, order gisqus.Order) ([]*gisqus.Post, error) {
 
 	values := url.Values{}
 	if since != (time.Time{}) {
 		values.Set("since", gisqus.ToDisqusTime(since))
 	}
 	if order != "" {
-		values.Set("order", order)
+		values.Set("order", string(order))
 	}
 	for _, include := range includes {
-		values.Add("include", include)
+		values.Add("include", string(include))
 	}
 	values.Set("limit", "100")
 	var posts []*gisqus.Post
@@ -181,12 +181,12 @@ func (d *Drisqus) UserInteresting(ctx context.Context, pages int) ([]*Interestin
 UserActiveForums wraps https://disqus.com/api/docs/users/listActiveForums/ (https://disqus.com/api/3.0/users/listActiveForums.json)
 When pages is -1, all pages are retrieved.
 */
-func (d *Drisqus) UserActiveForums(ctx context.Context, userID string, pages int, order string) ([]*gisqus.Forum, error) {
+func (d *Drisqus) UserActiveForums(ctx context.Context, userID string, pages int, order gisqus.Order) ([]*gisqus.Forum, error) {
 
 	values := url.Values{}
 
 	if order != "" {
-		values.Set("order", order)
+		values.Set("order", string(order))
 	}
 	values.Set("limit", "100")
 	var forums []*gisqus.Forum
@@ -215,11 +215,11 @@ UserFollowers wraps https://disqus.com/api/docs/users/listFollowers/ (https://di
 Numlikes, NumPosts, NumFollowers are not returned by Disqus' API
 When pages is -1, all pages are retrieved.
 */
-func (d *Drisqus) UserFollowers(ctx context.Context, userID string, pages int, order string) ([]*gisqus.User, error) {
+func (d *Drisqus) UserFollowers(ctx context.Context, userID string, pages int, order gisqus.Order) ([]*gisqus.User, error) {
 	values := url.Values{}
 
 	if order != "" {
-		values.Set("order", order)
+		values.Set("order", string(order))
 	}
 	values.Set("limit", "100")
 	var users []*gisqus.User
@@ -248,11 +248,11 @@ UserFollowing wraps https://disqus.com/api/docs/users/listFollowing/ (https://di
 Numlikes, NumPosts, NumFollowers are not returned by Disqus' API
 When pages is -1, all pages are retrieved.
 */
-func (d *Drisqus) UserFollowing(ctx context.Context, userID string, pages int, order string) ([]*gisqus.User, error) {
+func (d *Drisqus) UserFollowing(ctx context.Context, userID string, pages int, order gisqus.Order) ([]*gisqus.User, error) {
 	values := url.Values{}
 
 	if order != "" {
-		values.Set("order", order)
+		values.Set("order", string(order))
 	}
 	values.Set("limit", "100")
 	var users []*gisqus.User
@@ -280,11 +280,11 @@ func (d *Drisqus) UserFollowing(ctx context.Context, userID string, pages int, o
 UserForumFollowing wraps https://disqus.com/api/docs/users/listFollowingForums/ (https://disqus.com/api/3.0/users/listFollowingForums.json)
 When pages is -1, all pages are retrieved.
 */
-func (d *Drisqus) UserForumFollowing(ctx context.Context, userID string, pages int, order string) ([]*gisqus.Forum, error) {
+func (d *Drisqus) UserForumFollowing(ctx context.Context, userID string, pages int, order gisqus.Order) ([]*gisqus.Forum, error) {
 	values := url.Values{}
 
 	if order != "" {
-		values.Set("order", order)
+		values.Set("order", string(order))
 	}
 	values.Set("limit", "100")
 	var forums []*gisqus.Forum
