@@ -134,7 +134,7 @@ func handler(rw http.ResponseWriter, r *http.Request) {
 		forum := query.Get("forum")
 
 		ctx, _ := context.WithCancel(context.TODO())
-		threads, err := drisq.ThreadHot(ctx, []string{}, []string{forum}, []string{}, []string{})
+		threads, err := drisq.ThreadHot(ctx, []string{}, []string{forum}, []string{}, []gisqus.Include{})
 		if err != nil {
 			rw.WriteHeader(http.StatusNotFound)
 			fmt.Fprint(rw, err)
